@@ -40,56 +40,56 @@
 
 | 仓库 | 一句话定位 | 技术 |
 |---|---|---|
-| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个 Codex 审计数据分析技能包（可移植） | `Skills` · `Codex` |
-| [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | 可配置化采购三单匹配（通用底座） | `Python` · `Pandas` |
-| [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | 销售订单 / 发货 / SAP 开票三单匹配 | `Python` |
-| [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数工具配置与操作手册 | `ABAP` · `XML` · `PDF` |
-| [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价与审计底稿 | `Excel` · `U8` |
-| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | Miaoke销售 ToC 端对账底稿 | `Python` · `Pandas` |
+| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个可移植 Codex 审计数据分析技能（含 workbench 路由） | `Skills` · `Codex` |
+| [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | 可配置通用数据匹配工具包（SQL 解析 / 缓存 / 匹配键 / 分类驱动） | `Python` · `Pandas` |
+| [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | Miaoke ToB 销售 OMS / DMS 双源三单匹配（5 类差异） | `Python` |
+| [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD） | `ABAP` · `XML` · `PDF` |
+| [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | `Excel` · `U8` |
+| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | Miaoke ToC 四段 pairwise 对账（旺店通 → 惠策 → OMS → SAP） | `Python` · `Pandas` |
 
 ### 🔍 审计数据分析 · 2
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个 Codex 审计数据分析技能（可移植工作流包） | 通用 | `Skills` · `Codex` |
-| [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货出库核算与审计工作簿 | 通用 | `Excel` · `U8` |
+| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个可移植 Codex 审计数据分析技能（含 workbench 路由） | 通用 | `Skills` · `Codex` |
+| [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | 通用 | `Excel` · `U8` |
 
 ### 🔄 三单匹配 · 采购 · 5
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | ★ 可配置化采购三单匹配（通用底座） | 通用 | `Python` · `Pandas` |
-| [purchase-three-match-toolkit](https://github.com/Gvmeakiss/purchase-three-match-toolkit) | 采购三单匹配工具包 | 通用 | `Python` · `Pandas` |
-| [purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope) | NewHope采购三单匹配 | NewHope | `Python` |
-| [purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp) | AQPP 采购三单匹配实现 | AQPP | `Python` |
-| [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) | 2026 Miaoke采购三单匹配 | Miaoke | `Python` · `Pandas` |
+| [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | ★ 可配置通用数据匹配工具包（SQL 解析 / 缓存 / 匹配键 / 分类驱动） | 通用 | `Python` · `Pandas` |
+| [purchase-three-match-toolkit](https://github.com/Gvmeakiss/purchase-three-match-toolkit) | SAP MM 采购三单匹配（四大类十三子类差异分析） | 通用 | `Python` · `Pandas` |
+| [purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope) | NewHope 采购三单匹配落地版（含 SAP 取数配套文档） | NewHope | `Python` |
+| [purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp) | AQPP 2026 三单匹配归档索引（订单 / 发运 / 发票，AQPP-01~24） | AQPP | `Python` |
+| [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) | Miaoke 2026H1 采购三单匹配（订单行粒度全外连接 + AQPP 24 组） | Miaoke | `Python` · `Pandas` |
 
 ### 🔄 三单匹配 · 销售 · 8
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | ★ 销售 OMS / DMS 三单匹配（通用底座） | 通用 | `Python` |
-| [sales-three-match-toolkit](https://github.com/Gvmeakiss/sales-three-match-toolkit) | 销售三单匹配工具包 | 通用 | `Python` · `Pandas` |
-| [sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope) | NewHope销售三单匹配 | NewHope | `Python` |
-| [sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026) | 2026 NewHope销售三单匹配 | NewHope | `Python` · `Pandas` |
-| [sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026) | 2026 Miaoke销售三单匹配 | Miaoke | `Python` · `Pandas` |
-| [miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025) | 2025 Miaoke销售转 B 端匹配 | Miaoke | `Python` |
-| [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) | 2026 Miaoke销售转 B 端匹配 | Miaoke | `Python` |
-| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | ★ Miaoke销售转 C 端对账 | Miaoke | `Python` · `Pandas` |
+| [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | ★ Miaoke ToB 销售 OMS / DMS 双源三单匹配（5 类差异） | 通用 | `Python` |
+| [sales-three-match-toolkit](https://github.com/Gvmeakiss/sales-three-match-toolkit) | NewHope SAP SD 销售三单匹配（(VKORG,VBELN,POSNR) 键，30GB+ 优化） | 通用 | `Python` · `Pandas` |
+| [sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope) | NewHope 销售三单匹配实施版（含使用示例与排错） | NewHope | `Python` |
+| [sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026) | NewHope 2026 销售三单匹配（AQPP 无交货金额 24 子组） | NewHope | `Python` · `Pandas` |
+| [sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026) | Miaoke 2026H1 销售三单匹配（OMS / DMS 双渠道 AQPP-01~24） | Miaoke | `Python` · `Pandas` |
+| [miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025) | Miaoke 2025 全年 ToB 销售三单匹配（FY25 五分类） | Miaoke | `Python` |
+| [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) | Miaoke 2026H1 ToB 销售三单匹配（冲销前置 / PBC 拆分 / 单测） | Miaoke | `Python` |
+| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | ★ Miaoke ToC 四段 pairwise 对账（旺店通 → 惠策 → OMS → SAP） | Miaoke | `Python` · `Pandas` |
 
 ### 🖥️ SAP 财务与取数 · 3
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | ★ SAP ABAP 取数工具配置与操作手册 | 通用 | `ABAP` · `XML` · `PDF` |
-| [sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1) | SAP FI 2026 上半年凭证与余额处理 | 通用 | `Python` · `SAP` |
-| [sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match) | SAP SD 销售三单匹配 | 通用 | `Python` · `SAP` |
+| [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | ★ SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD） | 通用 | `ABAP` · `XML` · `PDF` |
+| [sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1) | SAP FI 2026H1 序时账 / 余额表 / 勾稽（ACDOCA / BKPF / FAGLFLEXT） | 通用 | `Python` · `SAP` |
+| [sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match) | SAP SD 销售三单匹配（13 场景，按公司批量并行） | 通用 | `Python` · `SAP` |
 
 ### 🧰 工具 · 1
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [test-tools](https://github.com/Gvmeakiss/test-tools) | ★ 数据匹配诊断与测试工具 | 通用 | `Python` |
+| [test-tools](https://github.com/Gvmeakiss/test-tools) | ★ SAP MM 三单匹配诊断与数据质量工具 | 通用 | `Python` |
 
 ---
 
