@@ -45,7 +45,7 @@
 | [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | 销售订单 / 发货 / SAP 开票三单匹配 | `Python` |
 | [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数工具配置与操作手册 | `ABAP` · `XML` · `PDF` |
 | [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价与审计底稿 | `Excel` · `U8` |
-| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | 妙可销售 ToC 端对账底稿 | `Python` · `Pandas` |
+| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | Miaoke销售 ToC 端对账底稿 | `Python` · `Pandas` |
 
 ### 🔍 审计数据分析 · 2
 
@@ -60,9 +60,9 @@
 |---|---|---|---|
 | [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | ★ 可配置化采购三单匹配（通用底座） | 通用 | `Python` · `Pandas` |
 | [purchase-three-match-toolkit](https://github.com/Gvmeakiss/purchase-three-match-toolkit) | 采购三单匹配工具包 | 通用 | `Python` · `Pandas` |
-| [purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope) | 新希望采购三单匹配 | 新希望 | `Python` |
+| [purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope) | NewHope采购三单匹配 | NewHope | `Python` |
 | [purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp) | AQPP 采购三单匹配实现 | AQPP | `Python` |
-| [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) | 2026 妙可采购三单匹配 | 妙可 | `Python` · `Pandas` |
+| [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) | 2026 Miaoke采购三单匹配 | Miaoke | `Python` · `Pandas` |
 
 ### 🔄 三单匹配 · 销售 · 8
 
@@ -70,12 +70,12 @@
 |---|---|---|---|
 | [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | ★ 销售 OMS / DMS 三单匹配（通用底座） | 通用 | `Python` |
 | [sales-three-match-toolkit](https://github.com/Gvmeakiss/sales-three-match-toolkit) | 销售三单匹配工具包 | 通用 | `Python` · `Pandas` |
-| [sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope) | 新希望销售三单匹配 | 新希望 | `Python` |
-| [sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026) | 2026 新希望销售三单匹配 | 新希望 | `Python` · `Pandas` |
-| [sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026) | 2026 妙可销售三单匹配 | 妙可 | `Python` · `Pandas` |
-| [miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025) | 2025 妙可销售转 B 端匹配 | 妙可 | `Python` |
-| [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) | 2026 妙可销售转 B 端匹配 | 妙可 | `Python` |
-| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | ★ 妙可销售转 C 端对账 | 妙可 | `Python` · `Pandas` |
+| [sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope) | NewHope销售三单匹配 | NewHope | `Python` |
+| [sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026) | 2026 NewHope销售三单匹配 | NewHope | `Python` · `Pandas` |
+| [sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026) | 2026 Miaoke销售三单匹配 | Miaoke | `Python` · `Pandas` |
+| [miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025) | 2025 Miaoke销售转 B 端匹配 | Miaoke | `Python` |
+| [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) | 2026 Miaoke销售转 B 端匹配 | Miaoke | `Python` |
+| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | ★ Miaoke销售转 C 端对账 | Miaoke | `Python` · `Pandas` |
 
 ### 🖥️ SAP 财务与取数 · 3
 
