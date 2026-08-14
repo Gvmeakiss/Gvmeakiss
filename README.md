@@ -1,6 +1,13 @@
 # 👋 Hi, I'm James Li
 
-**审计数据分析 · ERP 三单匹配 · 内部控制**
+**IT Audit · Data Analytics · ERP Data Matching**
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?logo=pandas&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-Expert-4479A1)
+![SAP](https://img.shields.io/badge/SAP-ECC%2FS4HANA-0FAAFF)
+![U8](https://img.shields.io/badge/U8-ERP-6C8EBF)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 专注于审计与数据领域的自动化工具建设：从 SAP / U8 / OMS / DMS 等多源系统提取数据，构建采购、销售三单匹配与对账流程，输出可复核、可追溯的差异分析结果。
 
@@ -62,3 +69,7 @@
 - **三单匹配（Three-Way Matching）**：采购订单 / 收货单 / 发票 三方核对，定位差异并分类
 - **多源数据对账**：OMS / DMS / SAP 系统间数据一致性校验
 - **可复核输出**：每个结论附带口径说明、源数据逻辑与运行记录，支撑审计留痕
+
+---
+
+*Disclaimer: Personal projects and personal views. Not affiliated with or endorsed by KPMG. · 本页内容为个人项目与个人观点，与 KPMG 无关。*
