@@ -40,6 +40,7 @@
 
 | 仓库 | 一句话定位 | 技术 |
 |---|---|---|
+| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个 Codex 审计数据分析技能包（可移植） | `Skills` · `Codex` |
 | [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | 可配置化采购三单匹配（通用底座） | `Python` · `Pandas` |
 | [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | 销售订单 / 发货 / SAP 开票三单匹配 | `Python` |
 | [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数工具配置与操作手册 | `ABAP` · `XML` · `PDF` |
@@ -50,7 +51,7 @@
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 受控审计数据分析工作流技能包 | 通用 | `Python` · `Skills` |
+| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个 Codex 审计数据分析技能（可移植工作流包） | 通用 | `Skills` · `Codex` |
 | [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货出库核算与审计工作簿 | 通用 | `Excel` · `U8` |
 
 ### 🔄 三单匹配 · 采购 · 5
