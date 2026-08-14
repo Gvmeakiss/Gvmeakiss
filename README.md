@@ -51,6 +51,7 @@
 |---|---|
 | [sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match) | SAP SD 销售三单匹配 |
 | [sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1) | SAP FI 2026 上半年凭证与余额处理 |
+| [sap-data-extraction](https://github.com/Gvmeakiss/sap-data-extraction) | SAP 取数工具 XML 配置与操作手册 |
 
 ### 🧰 工具
 
