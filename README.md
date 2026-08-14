@@ -29,21 +29,8 @@
 
 ## 🧭 关于我
 
-- 资深 **IT 审计** 背景（DTT、KPMG），现专注审计数据分析与自动化工具建设
-- 技术栈：`Python` / `Pandas` / `SQL` / `SAP ECC·S4HANA` / `用友 U8` / `Excel·Openpyxl` / `Shell`
-- 方法论：以可复核、可追溯的口径，把审计逻辑沉淀为可复用的工具
-
-## 🛠️ 技术栈
-
-| 领域 | 工具 / 技术 |
-|---|---|
-| 语言 | `Python` · `Shell` |
-| 数据处理 | `Pandas` · `NumPy` · `SQL` |
-| ERP 系统 | `SAP ECC/S4HANA` · `用友 U8` |
-| 文件与报表 | `Excel / Openpyxl` · `CSV` · `XML` |
-| 工程化 | `Git` · `GitHub Actions` · `MIT` 开源协议 |
-
----
+- 资深 IT 审计背景（DTT、KPMG），现专注审计数据分析与自动化工具建设
+- 把审计逻辑沉淀为可复用的数据工具，覆盖采购 / 销售三单匹配、SAP 取数、多源对账
 
 ## 📂 项目矩阵
 
