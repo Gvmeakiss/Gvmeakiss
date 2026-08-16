@@ -61,9 +61,9 @@
 | ★ [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD），分模块取数范围与审计场景映射（三单匹配 / 序时账-余额核对） | 通用 | `ABAP` · `XML` · `PDF` |
 | [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个可移植 Codex 审计数据分析技能（含 workbench 路由） | 通用 | `Skills` · `Codex` |
 | [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | 可配置通用数据匹配工具包（SQL 解析 / 缓存 / 匹配键 / 分类驱动） | 通用 | `Python` · `Pandas` |
-| [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | Miaoke ToB 销售 OMS / DMS 双源三单匹配（5 类差异） | Miaoke | `Python` |
+| [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | Miaoke ToB 销售 OMS / DMS 双源三单匹配（5 类差异） | 客户专属 | `Python` |
 | [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | 通用 | `Excel` · `U8` |
-| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | Miaoke ToC 四段 pairwise 对账（某电商平台 → 某订单中台 → OMS → SAP） | Miaoke | `Python` · `Pandas` |
+| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | Miaoke ToC 四段 pairwise 对账（某电商平台 → 某订单中台 → OMS → SAP） | 客户专属 | `Python` · `Pandas` |
 
 ### 📥 SAP ABAP 取数工具（FI / MM / SD）
 
@@ -128,18 +128,18 @@
 
 > 工具类仓库按「一个仓库 = 一组相关工具」组织；下表按子工具 / SQL 模板逐条拆分，并链接至具体文件，便于检索与复用。
 
-#### ★ test-tools · SAP MM 三单匹配诊断与数据质量
+#### 🔧 test-tools · SAP MM 三单匹配诊断与数据质量
 
-| 子工具 | 说明 | 类型 | 技术 |
+| 工具 | 说明 | 类型 | 技术 |
 |---|---|---|---|
 | [data_merge · 数据合并](https://github.com/Gvmeakiss/test-tools/blob/main/data_merge/merge_all_mm_data.py) | MM 多源数据自动合并（订单 / 收货 / 发票） | 通用 | `Python` |
 | [data_quality · 列校验](https://github.com/Gvmeakiss/test-tools/blob/main/data_quality/check_columns.py) | 列结构一致性校验（缺失 / 错位 / 类型） | 通用 | `Python` |
 | [data_quality · 质量检查](https://github.com/Gvmeakiss/test-tools/blob/main/data_quality/check_data_quality.py) | 空值 / 重复 / 范围等数据质量规则检查 | 通用 | `Python` |
 | [diagnostics · 匹配诊断](https://github.com/Gvmeakiss/test-tools/blob/main/diagnostics/why_match_was_zero.py) | 三单匹配为零归因诊断（定位断点） | 通用 | `Python` |
 
-#### 🔧 dtt-python-tools · 通用 Python 工具（已脱敏）
+#### 🔧 dtt-python-tools · 通用 Python 工具
 
-| 子工具 | 说明 | 类型 | 技术 |
+| 工具 | 说明 | 类型 | 技术 |
 |---|---|---|---|
 | [Excel 合并（脚本）](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/merge_excel_tool.py) | 多工作簿 / 工作表批量合并 | 通用 | `Python` |
 | [Excel 合并（Notebook）](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/excel_files_merger.ipynb) | 交互式 Excel 合并示例 | 通用 | `Jupyter` |
@@ -147,9 +147,9 @@
 | [项目编码提取](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/project_code_extractor.ipynb) | 从文本 / 文档提取结构化项目编码 | 通用 | `Jupyter` |
 | [网页爬虫](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/web_crawler.ipynb) | 通用网页数据采集模板 | 通用 | `Jupyter` |
 
-#### 🔧 dtt-caats-sql · 通用 CAATS / 勾稽 SQL 模板（已脱敏）
+#### 🔧 dtt-caats-sql · 通用 CAATS / 勾稽 SQL 模板
 
-| 模板 | 说明 | 类型 | 技术 |
+| 工具 | 说明 | 类型 | 技术 |
 |---|---|---|---|
 | [销售订单匹配](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/HM/01_sales_order_match.sql) | 销售订单 ↔ 收入勾稽、退货冲红、外币折算 | 通用 | `SQL` |
 | [物料追溯](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/HM/02_material_trace.sql) | BOM 产出 ↔ 组件消耗勾稽、重复值检测 | 通用 | `SQL` |
@@ -180,7 +180,7 @@
 
 | 工具 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [订单分析](https://github.com/Gvmeakiss/ecommerce-order-analytics/blob/main/order_analytics.py) | 某电商平台订单多维分析（GMV / 复购 / 客单价，已脱敏） | 通用 | `Python` · `Pandas` |
+| [订单分析](https://github.com/Gvmeakiss/ecommerce-order-analytics/blob/main/order_analytics.py) | 某电商平台订单多维分析（GMV / 复购 / 客单价） | 通用 | `Python` · `Pandas` |
 
 ---
 
@@ -247,7 +247,7 @@ flowchart LR
 
 <div align="center">
 
-*Disclaimer: Personal projects and personal views. Not affiliated with or endorsed by KPMG.*<br>
-*本页内容为个人项目与个人观点，与 KPMG 无关。*
+*Disclaimer: Personal projects and personal views. Not affiliated with or endorsed by any former employer (DTT / KPMG) or client.*<br>
+*本页内容为个人项目与个人观点，与任何前雇主（DTT / KPMG）及客户无关。*
 
 </div>
