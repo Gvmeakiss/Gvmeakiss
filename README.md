@@ -69,12 +69,13 @@
 | [purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp) | AQPP 2026 三单匹配归档索引（订单 / 发运 / 发票，AQPP-01~24） | AQPP | `Python` |
 | [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) | Miaoke 2026H1 采购三单匹配（订单行粒度全外连接 + AQPP 24 组） | Miaoke | `Python` · `Pandas` |
 
-### 🔄 三单匹配 · 销售 · 8
+### 🔄 三单匹配 · 销售 · 9
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
 | [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | ★ Miaoke ToB 销售 OMS / DMS 双源三单匹配（5 类差异） | 通用 | `Python` |
 | [sales-three-match-toolkit](https://github.com/Gvmeakiss/sales-three-match-toolkit) | NewHope SAP SD 销售三单匹配（(VKORG,VBELN,POSNR) 键，30GB+ 优化） | 通用 | `Python` · `Pandas` |
+| [sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match) | SAP SD 销售三单匹配（13 场景，按公司批量并行） | 通用 | `Python` · `SAP` |
 | [sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope) | NewHope 销售三单匹配实施版（含使用示例与排错） | NewHope | `Python` |
 | [sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026) | NewHope 2026 销售三单匹配（AQPP 无交货金额 24 子组） | NewHope | `Python` · `Pandas` |
 | [sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026) | Miaoke 2026H1 销售三单匹配（OMS / DMS 双渠道 AQPP-01~24） | Miaoke | `Python` · `Pandas` |
@@ -82,13 +83,19 @@
 | [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) | Miaoke 2026H1 ToB 销售三单匹配（冲销前置 / PBC 拆分 / 单测） | Miaoke | `Python` |
 | [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | ★ Miaoke ToC 四段 pairwise 对账（旺店通 → 惠策 → OMS → SAP） | Miaoke | `Python` · `Pandas` |
 
-### 🖥️ SAP 财务与取数 · 3
+### 🖥️ SAP 财务与取数 · 2
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | ★ SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD），含分模块取数范围与审计场景映射（三单匹配 / 序时账-余额核对） | 通用 | `ABAP` · `XML` · `PDF` |
 | [sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1) | SAP FI 2026H1 序时账 / 余额表 / 勾稽（ACDOCA / BKPF / FAGLFLEXT） | 通用 | `Python` · `SAP` |
-| [sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match) | SAP SD 销售三单匹配（13 场景，按公司批量并行） | 通用 | `Python` · `SAP` |
+
+**★ [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction)** — SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD），含分模块取数范围与审计场景映射（三单匹配 / 序时账-余额核对）
+
+| 模块 | 取数脚本讲解 | 取数脚本链接 |
+|---|---|---|
+| FI | 抽取总账序时账（BKPF + BSEG）与余额表（FAGLFLEXT / GLT0）、次要索引（BSIS / BSAS / BSID / BSAD / BSIK / BSAK）及科目主数据（SKA1 / SKAT / SKB1），支撑**序时账与课余表勾稽** | [FI_SAP_ECC6.xml](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/FI_SAP_ECC6.xml) |
+| MM | 抽取采购订单（EKKO / EKPO）、采购历史（EKBE / EKBZ）、收货（MKPF / MSEG）与发票（RBKP / RSEG）等，以 **EKBE** 为枢纽按 EBELN / EBELP 串联三单，支撑**采购三单匹配** | [MM_SAP_ECC6.xml](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/MM_SAP_ECC6.xml) |
+| SD | 抽取销售订单（VBAK / VBAP）、交货（LIKP / LIPS）、开票（VBRK / VBRP）与凭证流（VBFA），以 **VBRP.AUBEL / AUPOS** 串联订单—发货—开票，支撑**销售三单匹配** | [SD_SAP_ECC6.xml](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/SD_SAP_ECC6.xml) |
 
 ### 🧰 工具 · 1
 
