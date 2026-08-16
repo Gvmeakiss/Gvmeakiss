@@ -21,7 +21,7 @@
 
 <br>
 
-![Project Repos](https://img.shields.io/badge/Project%20Repos-25-blue?style=flat-square)
+![Project Repos](https://img.shields.io/badge/Project%20Repos-29-blue?style=flat-square)
 ![Capability Domains](https://img.shields.io/badge/Capability%20Domains-6-9cf?style=flat-square)
 ![Audit Techniques](https://img.shields.io/badge/Audit%20Techniques-3WM%20%7C%20JE%20Testing%20%7C%20CAATS-orange?style=flat-square)
 
@@ -40,14 +40,14 @@
 
 | 维度 | 数据 |
 |---|---|
-| 公开项目仓库 | **25** |
+| 公开项目仓库 | **29** |
 | 能力域 | 6 · 取数 / 采购三单 / 销售三单 / JE 测试 / 工具·CAATS / 方法论 |
 | 核心技术栈 | `Python` · `Pandas` · `SQL` · `ABAP` · `Excel` · `Shell` · `Jupyter` |
 | 接入数据源 | SAP ECC / S/4HANA · 用友 U8 · 金蝶 · OMS · DMS |
 | 审计技法覆盖 | 三单匹配 · 序时账–余额勾稽 (JE) · CAATS · 多源对账 |
 | 合规基线 | 全量脱敏，依据 PIPL / 数据安全法 / 反不正当竞争法 |
 
-<sub>*25 public project repos across 6 capability domains; multi-source reconciliation over SAP / U8 / Kingdee / OMS / DMS; fully desensitized per PIPL, the Data Security Law and the Anti-Unfair-Competition Law.*</sub>
+<sub>*29 public project repos across 6 capability domains; multi-source reconciliation over SAP / U8 / Kingdee / OMS / DMS; fully desensitized per PIPL, the Data Security Law and the Anti-Unfair-Competition Law.*</sub>
 
 ## 📂 项目矩阵 · Projects
 
@@ -63,8 +63,8 @@
 
 <sub>All content shared here is for technical exchange only, on a no-revenue-sharing basis, and has been desensitized in accordance with the PIPL (de-identification / anonymization), the Data Security Law (classification, graded protection & technical safeguards), and the Anti-Unfair-Competition Law (trade-secret protection). No financial data or client working papers are stored or uploaded.</sub>
 
-> 25 个公开仓库，按能力域分组；**★ 为核心可复用工具**（建议先看），「类型」标注其适用边界（通用底座 / 具体客户项目）。
-> <sub>*25 public repos grouped by capability; ★ marks core reusable tools (start here). The 类型 column marks the scope: generic foundation vs. client-specific project.*</sub>
+> 29 个公开仓库，按能力域分组；**★ 为核心可复用工具**（建议先看），「类型」标注其适用边界（通用底座 / 具体客户项目）。
+> <sub>*29 public repos grouped by capability; ★ marks core reusable tools (start here). The 类型 column marks the scope: generic foundation vs. client-specific project.*</sub>
 
 ### ⭐ 核心仓库
 
@@ -119,6 +119,8 @@
 | [sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1) | SAP FI 2026H1 序时账 JE 测试（Journal Entry Testing）：ACDOCA / BKPF / FAGLFLEXT 抽取、过账勾稽与异常凭证筛查 | 通用 | `Python` · `SAP` |
 | [CRRC_DT](https://github.com/Gvmeakiss/CRRC_DT) | CRRC 多公司 JE 会计分录测试：序时账合并 + 期初/发生额/期末余额勾稽（基于 ACDOCA / BKPF / BSEG） | 通用 | `Python` · `SAP` |
 | [CRRC_XC](https://github.com/Gvmeakiss/CRRC_XC) | CRRC 材料板块多公司 JE 测试：序时账合并 + 余额交叉验证（基于 BKPF / BSEG） | 通用 | `Python` · `SAP` |
+| [je-high-risk-screening](https://github.com/Gvmeakiss/je-high-risk-screening) | SAP JE 高风险分类筛查（HRC1/HRC2/HRC3 通用规则，序时账异常凭证识别） | 通用 | `SQL` · `Python` |
+| [sap-je-toolkit](https://github.com/Gvmeakiss/sap-je-toolkit) | SAP 多公司 JE 测试工具箱：序时账合并 + 期初/发生额/期末余额勾稽 + 交叉验证 | 通用 | `Python` · `SAP` |
 
 ### 🧰 工具 & CAATS
 
@@ -161,6 +163,23 @@
 |---|---|---|---|
 | [余额交叉验证](https://github.com/Gvmeakiss/dylan-tool/blob/main/balance_cross_validator.py) | 期初 + 凭证净额 − 期末 = 0 的批量勾稽 | 通用 | `Python` |
 
+#### 🔧 audit-data-utilities · 通用审计数据工具
+
+| 工具 | 说明 | 类型 | 技术 |
+|---|---|---|---|
+| [凭证模拟生成](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/journal_generator.py) | 生成脱敏模拟序时账（journal entries）用于自测 | 通用 | `Python` |
+| [余额模拟生成](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/balance_generator.py) | 生成脱敏模拟科目余额表 | 通用 | `Python` |
+| [数据完整性校验](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/data_integrity_validator.py) | 勾稽规则校验（期初+发生额−期末=0 等） | 通用 | `Python` |
+| [Excel 合并](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/utils/merge_excel.py) | 多工作簿批量合并 | 通用 | `Python` |
+| [预处理](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/utils/preprocess.py) | 通用数据清洗与标准化 | 通用 | `Python` |
+| [SQL→表](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/utils/sql_to_table.py) | SQL 查询结果转结构化表 | 通用 | `Python` |
+
+#### 🔧 ecommerce-order-analytics · 电商订单数据分析
+
+| 工具 | 说明 | 类型 | 技术 |
+|---|---|---|---|
+| [订单分析](https://github.com/Gvmeakiss/ecommerce-order-analytics/blob/main/order_analytics.py) | 某电商平台订单多维分析（GMV / 复购 / 客单价，已脱敏） | 通用 | `Python` · `Pandas` |
+
 ---
 
 ## 🧩 能力覆盖矩阵 · Capability Coverage
@@ -170,11 +189,11 @@
 | 📥 SAP ABAP 取数 | FI / MM / SD 标准底表抽取 | 1 | `BKPF`/`BSEG` · `EKPO` · `VBAK`/`VBFA` |
 | 🛒 采购三单匹配 | PO × GR × IR 三向核对、差异分类 | 6 | `(EBELN, EBELP)` |
 | 💰 销售三单匹配 | OMS / DMS / SAP 多源核对 | 9 | `(VKORG, VBELN, POSNR)` |
-| 🧾 SAP JE Testing | 序时账 – 余额勾稽 | 3 | 期初 + 发生额 − 期末 = 0 |
-| 🧰 工具 & CAATS | 匹配 / 合并 / 校验 / 勾稽 SQL | 4 仓库 · 17 工具 | — |
+| 🧾 SAP JE Testing | 序时账 – 余额勾稽 / HRC 筛查 | 5 | 期初 + 发生额 − 期末 = 0 |
+| 🧰 工具 & CAATS | 匹配 / 合并 / 校验 / 勾稽 SQL / 数据工具 | 6 仓库 · 24 工具 | — |
 | 📚 方法论 & 技能 | 可移植审计技能包 / 计价复核 | 2 | — |
 
-<sub>*Coverage across 6 domains & 25 repos; the 工具 & CAATS row is split into 17 individual tools / SQL templates (see the 🧰 工具 section). Exact match keys follow each ERP's standard document structures (see References).*</sub>
+<sub>*Coverage across 6 domains & 29 repos; the 工具 & CAATS row is split into 24 individual tools / SQL templates (see the 🧰 工具 section). Exact match keys follow each ERP's standard document structures (see References).*</sub>
 
 ## 🔄 工作流 · Pipeline
 
