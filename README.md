@@ -43,24 +43,24 @@
 
 ### ⭐ 核心仓库
 
-| 仓库 | 一句话定位 | 技术 |
-|---|---|---|
-| ★ [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD），含分模块取数范围与审计场景映射（三单匹配 / 序时账-余额核对） | `ABAP` · `XML` · `PDF` |
-| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个可移植 Codex 审计数据分析技能（含 workbench 路由） | `Skills` · `Codex` |
-| [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | 可配置通用数据匹配工具包（SQL 解析 / 缓存 / 匹配键 / 分类驱动） | `Python` · `Pandas` |
-| [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | Miaoke ToB 销售 OMS / DMS 双源三单匹配（5 类差异） | `Python` |
-| [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | `Excel` · `U8` |
-| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | Miaoke ToC 四段 pairwise 对账（旺店通 → 惠策 → OMS → SAP） | `Python` · `Pandas` |
+| 仓库 | 说明 | 类型 | 技术 |
+|---|---|---|---|
+| ★ [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD），分模块取数范围与审计场景映射（三单匹配 / 序时账-余额核对） | 通用 | `ABAP` · `XML` · `PDF` |
+| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个可移植 Codex 审计数据分析技能（含 workbench 路由） | 通用 | `Skills` · `Codex` |
+| [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | 可配置通用数据匹配工具包（SQL 解析 / 缓存 / 匹配键 / 分类驱动） | 通用 | `Python` · `Pandas` |
+| [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | Miaoke ToB 销售 OMS / DMS 双源三单匹配（5 类差异） | Miaoke | `Python` |
+| [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | 通用 | `Excel` · `U8` |
+| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | Miaoke ToC 四段 pairwise 对账（旺店通 → 惠策 → OMS → SAP） | Miaoke | `Python` · `Pandas` |
 
 ### 📥 SAP ABAP 取数工具（FI / MM / SD）
 
 > sap-abap-data-extraction 是执行三单匹配与序时账核对的基础。按 FI / MM / SD 三个模块配置 KAAP 取数脚本，分别支撑财务核算、采购与销售三单匹配。
 
-| 模块 | 功能说明 | 类型 | 技术 |
+| 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [📒 FI — 财务取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/FI_SAP_ECC6.xml) | 抽序时账（BKPF + BSEG）与余额表（FAGLFLEXT / GLT0）、次要索引、科目主数据，支撑**序时账-课余表勾稽** | 通用 | `ABAP` · `XML` |
-| [📦 MM — 采购取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/MM_SAP_ECC6.xml) | 抽订单 / 采购历史（EKBE 枢纽）/ 收货 / 发票，支撑**采购三单匹配** | 通用 | `ABAP` · `XML` |
-| [🚚 SD — 销售取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/SD_SAP_ECC6.xml) | 抽订单 / 交货 / 开票 / 凭证流（VBFA），支撑**销售三单匹配** | 通用 | `ABAP` · `XML` |
+| [📒 FI — 财务取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/FI_SAP_ECC6.xml) | 抽序时账（BKPF + BSEG）与余额表（FAGLFLEXT / GLT0）、次要索引、科目主数据，支撑序时账-课余表勾稽 | 通用 | `ABAP` · `XML` |
+| [📦 MM — 采购取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/MM_SAP_ECC6.xml) | 抽订单 / 采购历史（EKBE 枢纽）/ 收货 / 发票，支撑采购三单匹配 | 通用 | `ABAP` · `XML` |
+| [🚚 SD — 销售取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/SD_SAP_ECC6.xml) | 抽订单 / 交货 / 开票 / 凭证流（VBFA），支撑销售三单匹配 | 通用 | `ABAP` · `XML` |
 
 ### 🔍 审计数据分析 · 2
 
