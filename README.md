@@ -48,7 +48,7 @@
 | [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个可移植 Codex 审计数据分析技能（含 workbench 路由） | `Skills` · `Codex` |
 | [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | 可配置通用数据匹配工具包（SQL 解析 / 缓存 / 匹配键 / 分类驱动） | `Python` · `Pandas` |
 | [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | Miaoke ToB 销售 OMS / DMS 双源三单匹配（5 类差异） | `Python` |
-| [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD） | `ABAP` · `XML` · `PDF` |
+| [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD），含分模块取数范围与审计场景映射（三单匹配 / 序时账-余额核对） | `ABAP` · `XML` · `PDF` |
 | [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | `Excel` · `U8` |
 | [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | Miaoke ToC 四段 pairwise 对账（旺店通 → 惠策 → OMS → SAP） | `Python` · `Pandas` |
 
@@ -86,7 +86,7 @@
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | ★ SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD） | 通用 | `ABAP` · `XML` · `PDF` |
+| [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | ★ SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD），含分模块取数范围与审计场景映射（三单匹配 / 序时账-余额核对） | 通用 | `ABAP` · `XML` · `PDF` |
 | [sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1) | SAP FI 2026H1 序时账 / 余额表 / 勾稽（ACDOCA / BKPF / FAGLFLEXT） | 通用 | `Python` · `SAP` |
 | [sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match) | SAP SD 销售三单匹配（13 场景，按公司批量并行） | 通用 | `Python` · `SAP` |
 
