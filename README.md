@@ -112,6 +112,28 @@
 
 ---
 
+## 📚 参考与官方文档 · References
+
+> 项目逻辑（三单匹配 / 序时账-余额核对 / 多源对账）依赖各 ERP 系统的标准数据结构与接口规范，以下为各厂商官方说明文档，作为数据口径与字段映射的权威依据。
+> <sub>*The reconciliation logic relies on each ERP's standard data structures and interfaces. Official vendor docs below serve as the authoritative basis for data scoping and field mapping.*</sub>
+
+### 🟦 SAP（ECC / S/4HANA）
+- [SAP Help Portal](https://help.sap.com/docs/) — SAP 官方帮助门户，覆盖 ECC / S/4HANA 全模块文档
+- [SAP ERP (ECC) 文档](https://help.sap.com/docs/SAP_ERP) — MM / SD / FI 模块标准配置与底表结构
+- [SAP S/4HANA 文档](https://help.sap.com/docs/SAP_S4HANA_ON_PREMISE) — S/4HANA 总账（ACDOCA）与凭证架构
+- [ABAP 关键字文档 / 数据字典](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/index.htm) — 标准底表（BKPF / BSEG / EKPO / VBAK …）字段与域定义
+
+### 🟥 用友（U8）
+- [用友开发者中心](https://developer.yonyou.com/) — U8 / U9 / NC 开放接口与开发文档
+- [用友 U8 产品与文档](https://u8.yonyou.com/) — U8 存货 / 供应链 / 财务模块说明
+
+### 🟩 金蝶（Kingdee）
+- [金蝶开放平台](https://open.kingdee.com/) — 金蝶云·苍穹 / K/3 开放 API 与集成规范
+- [金蝶开发者社区](https://dev.kingdee.com/) — 苍穹 PaaS 平台开发文档与数据模型
+- [金蝶官网](https://www.kingdee.com/) — 产品与模块总览
+
+---
+
 <div align="center">
 
 *Disclaimer: Personal projects and personal views. Not affiliated with or endorsed by KPMG.*<br>
