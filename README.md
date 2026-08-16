@@ -93,7 +93,7 @@
 | [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) | Miaoke 2026H1 ToB 销售三单匹配（冲销前置 / PBC 拆分 / 单测） | Miaoke | `Python` |
 | [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | ★ Miaoke ToC 四段 pairwise 对账（旺店通 → 惠策 → OMS → SAP） | Miaoke | `Python` · `Pandas` |
 
-### 🖥️ SAP 财务与取数 · 1
+### 🖥️ SAP JETesting 核对
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
