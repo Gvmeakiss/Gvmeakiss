@@ -77,28 +77,42 @@
 
 ### 🛒 三单匹配 · 采购
 
+> 通用三单匹配逻辑：采购订单（PO）× 收货（GR）× 发票（IR）三方核对，按 `(EBELN, EBELP)` 关联，输出**四大类十三子类**差异分析与可复核审计底稿。下列为核心可复用工具包；客户专属落地版见折叠。
+
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | ★ 可配置通用数据匹配工具包（SQL 解析 / 缓存 / 匹配键 / 分类驱动） | 通用 | `Python` · `Pandas` |
-| [purchase-three-match-toolkit](https://github.com/Gvmeakiss/purchase-three-match-toolkit) | SAP MM 采购三单匹配（四大类十三子类差异分析） | 通用 | `Python` · `Pandas` |
-| [purchase-three-match-final](https://github.com/Gvmeakiss/purchase-three-match-final) | 采购三单匹配最终整合版（四大类13子类，SAP ECC/S4，KPMG 格式数据） | 通用 | `Python` |
-| [purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope) | NewHope 采购三单匹配落地版（含 SAP 取数配套文档） | NewHope | `Python` |
-| [purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp) | AQPP 2026 三单匹配归档索引（订单 / 发运 / 发票，AQPP-01~24） | AQPP | `Python` |
-| [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) | Miaoke 2026H1 采购三单匹配（订单行粒度全外连接 + AQPP 24 组） | Miaoke | `Python` · `Pandas` |
+| ★ [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | 可配置通用数据匹配引擎（SQL 解析 / 缓存 / 匹配键 / 差异分类 / Excel 导出，配置驱动） | 通用 | `Python` · `Pandas` |
+| [purchase-three-match-toolkit](https://github.com/Gvmeakiss/purchase-three-match-toolkit) | SAP MM 采购三单匹配（四大类十三子类差异分析，KPMG 格式 TXT） | 通用 | `Python` · `Pandas` |
+| [purchase-three-match-final](https://github.com/Gvmeakiss/purchase-three-match-final) | 采购三单匹配整合版（四大类13子类，SAP ECC/S4） | 通用 | `Python` |
+
+<details><summary>客户落地实现（NewHope / AQPP / Miaoke 专属，逻辑同核心工具包）</summary>
+
+- [purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope) — NewHope 采购三单匹配落地版（含 SAP 取数配套文档）
+- [purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp) — AQPP 2026 三单匹配归档索引（订单 / 发运 / 发票，AQPP-01~24）
+- [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) — Miaoke 2026H1 采购三单匹配（订单行粒度全外连接 + AQPP 24 组）
+
+</details>
 
 ### 💰 三单匹配 · 销售
 
+> 通用三单匹配逻辑：销售订单 × 交货单 × 发票三方核对，覆盖 SAP SD（`(VKORG, VBELN, POSNR)` / `AUBEL,AUPOS`）与 OMS / DMS 双源，输出 **13 场景 / 5 类差异**。下列为核心可复用工具包；客户专属落地版见折叠。
+
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | ★ Miaoke ToB 销售 OMS / DMS 双源三单匹配（5 类差异） | 通用 | `Python` |
-| [sales-three-match-toolkit](https://github.com/Gvmeakiss/sales-three-match-toolkit) | NewHope SAP SD 销售三单匹配（(VKORG,VBELN,POSNR) 键，30GB+ 优化） | 通用 | `Python` · `Pandas` |
-| [sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match) | SAP SD 销售三单匹配（13 场景，按公司批量并行） | 通用 | `Python` · `SAP` |
-| [sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope) | NewHope 销售三单匹配实施版（含使用示例与排错） | NewHope | `Python` |
-| [sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026) | NewHope 2026 销售三单匹配（AQPP 无交货金额 24 子组） | NewHope | `Python` · `Pandas` |
-| [sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026) | Miaoke 2026H1 销售三单匹配（OMS / DMS 双渠道 AQPP-01~24） | Miaoke | `Python` · `Pandas` |
-| [miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025) | Miaoke 2025 全年 ToB 销售三单匹配（FY25 五分类） | Miaoke | `Python` |
-| [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) | Miaoke 2026H1 ToB 销售三单匹配（冲销前置 / PBC 拆分 / 单测） | Miaoke | `Python` |
-| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | ★ Miaoke ToC 四段 pairwise 对账（某电商平台 → 某订单中台 → OMS → SAP） | Miaoke | `Python` · `Pandas` |
+| ★ [sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match) | SAP SD 销售三单匹配（13 场景，按公司批量并行，关联键回退 + 借贷正负） | 通用 | `Python` · `SAP` |
+| [sales-three-match-toolkit](https://github.com/Gvmeakiss/sales-three-match-toolkit) | SAP SD 销售三单匹配（大表 30GB+ 优化 / 负开票冲账 / Untested 四表） | 通用 | `Python` · `Pandas` |
+| ★ [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | OMS / DMS 双源销售三单匹配（5 类差异，多销售组织分组导出） | 通用 | `Python` |
+
+<details><summary>客户落地实现（NewHope / Miaoke 专属，逻辑同核心工具包）</summary>
+
+- [sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope) — NewHope 销售三单匹配实施版（含使用示例与排错）
+- [sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026) — NewHope 2026 销售三单匹配（AQPP 无交货金额 24 子组）
+- [sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026) — Miaoke 2026H1 销售三单匹配（OMS / DMS 双渠道 AQPP-01~24）
+- [miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025) — Miaoke 2025 全年 ToB 销售三单匹配（FY25 五分类）
+- [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) — Miaoke 2026H1 ToB 销售三单匹配（冲销前置 / PBC 拆分 / 单测）
+- [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) — Miaoke ToC 四段 pairwise 对账（某电商平台 → 某订单中台 → OMS → SAP）
+
+</details>
 
 ### 🧾 SAP JETesting 核对
 
@@ -175,8 +189,8 @@
 | 能力域 | 核心技法 | 仓库 | 关键匹配键 / 公式 |
 |---|---|---|---|
 | 📥 SAP ABAP 取数 | FI / MM / SD 标准底表抽取 | 1 | `BKPF`/`BSEG` · `EKPO` · `VBAK`/`VBFA` |
-| 🛒 采购三单匹配 | PO × GR × IR 三向核对、差异分类 | 6 | `(EBELN, EBELP)` |
-| 💰 销售三单匹配 | OMS / DMS / SAP 多源核对 | 9 | `(VKORG, VBELN, POSNR)` |
+| 🛒 采购三单匹配 | PO × GR × IR 三向核对、四大类十三子类差异 | 3 核心 (+3 客户) | `(EBELN, EBELP)` |
+| 💰 销售三单匹配 | OMS / DMS / SAP 多源核对、13 场景 / 5 类差异 | 3 核心 (+5 客户) | `(VKORG, VBELN, POSNR)` |
 | 🧾 SAP JE Testing | 序时账 – 余额勾稽 / HRC 筛查 | 5 | 期初 + 发生额 − 期末 = 0 |
 | 🧰 工具 & CAATS | 匹配 / 合并 / 校验 / 勾稽 SQL / 数据工具 | 6 仓库 · 24 工具 | — |
 | 📚 方法论 & 技能 | 可移植审计技能包 / 计价复核 | 2 | — |
