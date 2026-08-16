@@ -36,18 +36,6 @@
 - 把审计逻辑沉淀为可复用的数据工具，覆盖采购 / 销售三单匹配、SAP 取数、多源对账
   <sub>*Turning audit logic into reusable data tools — purchase / sales three-way matching, SAP data extraction, multi-source reconciliation.*</sub>
 
-## 📊 数据一览 · At a Glance
-
-| 维度 | 数据 |
-|---|---|
-| 公开项目仓库 | **29** |
-| 能力域 | 6 · 取数 / 采购三单 / 销售三单 / JE 测试 / 工具·CAATS / 方法论 |
-| 核心技术栈 | `Python` · `Pandas` · `SQL` · `ABAP` · `Excel` · `Shell` · `Jupyter` |
-| 接入数据源 | SAP ECC / S/4HANA · 用友 U8 · 金蝶 · OMS · DMS |
-| 审计技法覆盖 | 三单匹配 · 序时账–余额勾稽 (JE) · CAATS · 多源对账 |
-| 合规基线 | 全量脱敏，依据 PIPL / 数据安全法 / 反不正当竞争法 |
-
-<sub>*29 public project repos across 6 capability domains; multi-source reconciliation over SAP / U8 / Kingdee / OMS / DMS; fully desensitized per PIPL, the Data Security Law and the Anti-Unfair-Competition Law.*</sub>
 
 ## 📂 项目矩阵 · Projects
 
