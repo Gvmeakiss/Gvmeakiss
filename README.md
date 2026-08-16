@@ -6,6 +6,8 @@
 
 专注于四大IT审计需求的自动化工具构建的机车佬：从 SAP ECC & S4 Hana/ 用友U8 / OMS / DMS / 金蝶 等多源系统提取数据，构建采购、销售三单匹配、业财核对、经营数据分析、JETesting 等对账流程，输出可复核、可追溯的差异分析结果。
 
+<sub>*A motorcycle rider building automation tools for Big-4 IT audit: extracting data from SAP ECC & S/4HANA, Yonyou U8, OMS / DMS, Kingdee and more, and building reconciliation pipelines for purchase & sales three-way matching, business-finance reconciliation, operating-data analysis and JE testing — delivering reviewable, traceable variance analysis.*</sub>
+
 <br>
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
@@ -27,14 +29,17 @@
 
 ---
 
-## 🧭 关于我
+## 🧭 关于我 · About
 
 - 四大IT审计背景（DTT*2year、KPMG*2year），现专注审计数据分析与自动化工具建设
+  <sub>*Big-4 IT audit background (2 yrs DTT, 2 yrs KPMG), now focused on audit data analytics and automation tooling.*</sub>
 - 把审计逻辑沉淀为可复用的数据工具，覆盖采购 / 销售三单匹配、SAP 取数、多源对账
+  <sub>*Turning audit logic into reusable data tools — purchase / sales three-way matching, SAP data extraction, multi-source reconciliation.*</sub>
 
-## 📂 项目矩阵
+## 📂 项目矩阵 · Projects
 
 > 19 个公开仓库，按能力域分组；**★ 为核心可复用工具**（建议先看），「类型」标注其适用边界（通用底座 / 具体客户项目）。
+> <sub>*19 public repos grouped by capability; ★ marks core reusable tools (start here). The 类型 column marks the scope: generic foundation vs. client-specific project.*</sub>
 
 ### ⭐ 核心仓库
 
@@ -93,11 +98,14 @@
 
 ---
 
-## 🧠 核心方法论
+## 🧠 核心方法论 · Methodology
 
 - **三单匹配（Three-Way Matching）**：采购订单 / 收货单 / 发票 三方核对，定位差异并分类
+  <sub>*Three-way matching: cross-check purchase order / goods receipt / invoice; locate and classify variances.*</sub>
 - **多源数据对账**：OMS / DMS / SAP 系统间数据一致性校验
+  <sub>*Multi-source reconciliation: consistency checks across OMS / DMS / SAP.*</sub>
 - **可复核输出**：每个结论附带口径说明、源数据逻辑与运行记录，支撑审计留痕
+  <sub>*Reviewable output: every result ships with its basis, source-data logic and run records for audit trail.*</sub>
 
 ---
 
