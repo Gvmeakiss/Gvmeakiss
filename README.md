@@ -92,6 +92,8 @@
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
 | [sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1) | SAP FI 2026H1 序时账 JE 测试（Journal Entry Testing）：ACDOCA / BKPF / FAGLFLEXT 抽取、过账勾稽与异常凭证筛查 | 通用 | `Python` · `SAP` |
+| [CRRC_DT](https://github.com/Gvmeakiss/CRRC_DT) | CRRC 多公司 JE 会计分录测试：序时账合并 + 期初/发生额/期末余额勾稽（基于 ACDOCA / BKPF / BSEG） | 通用 | `Python` · `SAP` |
+| [CRRC_XC](https://github.com/Gvmeakiss/CRRC_XC) | CRRC 材料板块多公司 JE 测试：序时账合并 + 余额交叉验证（基于 BKPF / BSEG） | 通用 | `Python` · `SAP` |
 
 ### 🧰 工具
 
