@@ -58,9 +58,9 @@
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [📒 FI — 财务取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/FI_SAP_ECC6.xml) | 抽序时账（BKPF + BSEG）与余额表（FAGLFLEXT / GLT0）、次要索引、科目主数据，支撑序时账-课余表勾稽 | 通用 | `ABAP` · `XML` |
-| [📦 MM — 采购取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/MM_SAP_ECC6.xml) | 抽订单 / 采购历史（EKBE 枢纽）/ 收货 / 发票，支撑采购三单匹配 | 通用 | `ABAP` · `XML` |
-| [🚚 SD — 销售取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/SD_SAP_ECC6.xml) | 抽订单 / 交货 / 开票 / 凭证流（VBFA），支撑销售三单匹配 | 通用 | `ABAP` · `XML` |
+| [📒 FI — 财务取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/FI/README.md) | 抽序时账（BKPF + BSEG）与余额表（FAGLFLEXT / GLT0）、次要索引、科目主数据，支撑序时账-课余表勾稽（含 SAP 标准表参考） | 通用 | `ABAP` · `XML` |
+| [📦 MM — 采购取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/MM/README.md) | 抽订单 / 采购历史（EKBE 枢纽）/ 收货 / 发票，支撑采购三单匹配（含 SAP 标准表参考） | 通用 | `ABAP` · `XML` |
+| [🚚 SD — 销售取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/SD/README.md) | 抽订单 / 交货 / 开票 / 凭证流（VBFA），支撑销售三单匹配（含 SAP 标准表参考） | 通用 | `ABAP` · `XML` |
 
 ### 🔍 审计数据分析 · 2
 
