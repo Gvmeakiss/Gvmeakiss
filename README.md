@@ -38,6 +38,8 @@
 
 ## 📂 项目矩阵 · Projects
 
+<p style="color:#d73a49;font-weight:bold">⚠️ 声明 / Disclaimer：本主页仅分享无收益分成（no-revenue-sharing）的代码处理逻辑；所有敏感信息（客户名、法律实体、内部标识）均已脱敏；任何财务数据与客户底稿均不上传。<br><sub>Only no-revenue-sharing code logic is shared; all sensitive information is desensitized; no financial data or client working papers are uploaded.</sub></p>
+
 > 20 个公开仓库，按能力域分组；**★ 为核心可复用工具**（建议先看），「类型」标注其适用边界（通用底座 / 具体客户项目）。
 > <sub>*20 public repos grouped by capability; ★ marks core reusable tools (start here). The 类型 column marks the scope: generic foundation vs. client-specific project.*</sub>
 
@@ -100,6 +102,9 @@
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
 | [test-tools](https://github.com/Gvmeakiss/test-tools) | ★ SAP MM 三单匹配诊断与数据质量工具 | 通用 | `Python` |
+| [dtt-python-tools](https://github.com/Gvmeakiss/dtt-python-tools) | Deloitte 归档中的通用 Python 工具（Excel 合并 / 模拟数据 / 编码提取 / 爬虫），脱敏后开源 | 通用 | `Python` |
+| [dtt-caats-sql](https://github.com/Gvmeakiss/dtt-caats-sql) | 通用 CAATS / 勾稽 SQL 模板（销售三单匹配 / 分红赎回 / 会员权责），客户名已脱敏为 HM/BHYH/BHSZ/CSDN | 通用 | `SQL` |
+| [dylan-tool](https://github.com/Gvmeakiss/dylan-tool) | 通用期末余额交叉验证工具（期初 + 凭证净额 − 期末 = 0），脱敏版平衡勾稽方法论 | 通用 | `Python` |
 
 ---
 
