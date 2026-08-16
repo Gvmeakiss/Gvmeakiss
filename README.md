@@ -21,8 +21,8 @@
 
 <br>
 
-![Project Repos](https://img.shields.io/badge/Project%20Repos-19-blue?style=flat-square)
-![Categories](https://img.shields.io/badge/Project%20Categories-5-9cf?style=flat-square)
+![Project Repos](https://img.shields.io/badge/Project%20Repos-20-blue?style=flat-square)
+![Categories](https://img.shields.io/badge/Project%20Categories-6-9cf?style=flat-square)
 ![Focus](https://img.shields.io/badge/Focus-Three--Way%20Matching%20%7C%20Data%20Reconciliation-orange?style=flat-square)
 
 </div>
@@ -38,8 +38,8 @@
 
 ## 📂 项目矩阵 · Projects
 
-> 19 个公开仓库，按能力域分组；**★ 为核心可复用工具**（建议先看），「类型」标注其适用边界（通用底座 / 具体客户项目）。
-> <sub>*19 public repos grouped by capability; ★ marks core reusable tools (start here). The 类型 column marks the scope: generic foundation vs. client-specific project.*</sub>
+> 20 个公开仓库，按能力域分组；**★ 为核心可复用工具**（建议先看），「类型」标注其适用边界（通用底座 / 具体客户项目）。
+> <sub>*20 public repos grouped by capability; ★ marks core reusable tools (start here). The 类型 column marks the scope: generic foundation vs. client-specific project.*</sub>
 
 ### ⭐ 核心仓库
 
@@ -62,24 +62,18 @@
 | [📦 MM — 采购取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/MM/README.md) | 抽订单 / 采购历史（EKBE 枢纽）/ 收货 / 发票，支撑采购三单匹配（含 SAP 标准表参考） | 通用 | `ABAP` · `XML` |
 | [🚚 SD — 销售取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/SD/README.md) | 抽订单 / 交货 / 开票 / 凭证流（VBFA），支撑销售三单匹配（含 SAP 标准表参考） | 通用 | `ABAP` · `XML` |
 
-### 🔍 审计数据分析 · 2
-
-| 仓库 | 说明 | 类型 | 技术 |
-|---|---|---|---|
-| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个可移植 Codex 审计数据分析技能（含 workbench 路由） | 通用 | `Skills` · `Codex` |
-| [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | 通用 | `Excel` · `U8` |
-
-### 🛒 三单匹配 · 采购 · 5
+### 🛒 三单匹配 · 采购
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
 | [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | ★ 可配置通用数据匹配工具包（SQL 解析 / 缓存 / 匹配键 / 分类驱动） | 通用 | `Python` · `Pandas` |
 | [purchase-three-match-toolkit](https://github.com/Gvmeakiss/purchase-three-match-toolkit) | SAP MM 采购三单匹配（四大类十三子类差异分析） | 通用 | `Python` · `Pandas` |
+| [purchase-three-match-final](https://github.com/Gvmeakiss/purchase-three-match-final) | 采购三单匹配最终整合版（四大类13子类，SAP ECC/S4，KPMG 格式数据） | 通用 | `Python` |
 | [purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope) | NewHope 采购三单匹配落地版（含 SAP 取数配套文档） | NewHope | `Python` |
 | [purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp) | AQPP 2026 三单匹配归档索引（订单 / 发运 / 发票，AQPP-01~24） | AQPP | `Python` |
 | [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) | Miaoke 2026H1 采购三单匹配（订单行粒度全外连接 + AQPP 24 组） | Miaoke | `Python` · `Pandas` |
 
-### 💰 三单匹配 · 销售 · 9
+### 💰 三单匹配 · 销售
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
@@ -99,7 +93,7 @@
 |---|---|---|---|
 | [sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1) | SAP FI 2026H1 序时账 JE 测试（Journal Entry Testing）：ACDOCA / BKPF / FAGLFLEXT 抽取、过账勾稽与异常凭证筛查 | 通用 | `Python` · `SAP` |
 
-### 🧰 工具 · 1
+### 🧰 工具
 
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
