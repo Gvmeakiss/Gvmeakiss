@@ -21,9 +21,9 @@
 
 <br>
 
-![Project Repos](https://img.shields.io/badge/Project%20Repos-20-blue?style=flat-square)
-![Categories](https://img.shields.io/badge/Project%20Categories-6-9cf?style=flat-square)
-![Focus](https://img.shields.io/badge/Focus-Three--Way%20Matching%20%7C%20Data%20Reconciliation-orange?style=flat-square)
+![Project Repos](https://img.shields.io/badge/Project%20Repos-25-blue?style=flat-square)
+![Capability Domains](https://img.shields.io/badge/Capability%20Domains-6-9cf?style=flat-square)
+![Audit Techniques](https://img.shields.io/badge/Audit%20Techniques-3WM%20%7C%20JE%20Testing%20%7C%20CAATS-orange?style=flat-square)
 
 </div>
 
@@ -35,6 +35,19 @@
   <sub>*Big-4 IT audit background (2 yrs DTT, 2 yrs KPMG), now focused on audit data analytics and automation tooling.*</sub>
 - 把审计逻辑沉淀为可复用的数据工具，覆盖采购 / 销售三单匹配、SAP 取数、多源对账
   <sub>*Turning audit logic into reusable data tools — purchase / sales three-way matching, SAP data extraction, multi-source reconciliation.*</sub>
+
+## 📊 数据一览 · At a Glance
+
+| 维度 | 数据 |
+|---|---|
+| 公开项目仓库 | **25** |
+| 能力域 | 6 · 取数 / 采购三单 / 销售三单 / JE 测试 / 工具·CAATS / 方法论 |
+| 核心技术栈 | `Python` · `Pandas` · `SQL` · `ABAP` · `Excel` · `Shell` · `Jupyter` |
+| 接入数据源 | SAP ECC / S/4HANA · 用友 U8 · 金蝶 · OMS · DMS |
+| 审计技法覆盖 | 三单匹配 · 序时账–余额勾稽 (JE) · CAATS · 多源对账 |
+| 合规基线 | 全量脱敏，依据 PIPL / 数据安全法 / 反不正当竞争法 |
+
+<sub>*25 public project repos across 6 capability domains; multi-source reconciliation over SAP / U8 / Kingdee / OMS / DMS; fully desensitized per PIPL, the Data Security Law and the Anti-Unfair-Competition Law.*</sub>
 
 ## 📂 项目矩阵 · Projects
 
@@ -50,8 +63,8 @@
 
 <sub>All content shared here is for technical exchange only, on a no-revenue-sharing basis, and has been desensitized in accordance with the PIPL (de-identification / anonymization), the Data Security Law (classification, graded protection & technical safeguards), and the Anti-Unfair-Competition Law (trade-secret protection). No financial data or client working papers are stored or uploaded.</sub>
 
-> 20 个公开仓库，按能力域分组；**★ 为核心可复用工具**（建议先看），「类型」标注其适用边界（通用底座 / 具体客户项目）。
-> <sub>*20 public repos grouped by capability; ★ marks core reusable tools (start here). The 类型 column marks the scope: generic foundation vs. client-specific project.*</sub>
+> 25 个公开仓库，按能力域分组；**★ 为核心可复用工具**（建议先看），「类型」标注其适用边界（通用底座 / 具体客户项目）。
+> <sub>*25 public repos grouped by capability; ★ marks core reusable tools (start here). The 类型 column marks the scope: generic foundation vs. client-specific project.*</sub>
 
 ### ⭐ 核心仓库
 
@@ -117,6 +130,34 @@
 | [dylan-tool](https://github.com/Gvmeakiss/dylan-tool) | 通用期末余额交叉验证工具（期初 + 凭证净额 − 期末 = 0），脱敏版平衡勾稽方法论 | 通用 | `Python` |
 
 ---
+
+## 🧩 能力覆盖矩阵 · Capability Coverage
+
+| 能力域 | 核心技法 | 仓库 | 关键匹配键 / 公式 |
+|---|---|---|---|
+| 📥 SAP ABAP 取数 | FI / MM / SD 标准底表抽取 | 1 | `BKPF`/`BSEG` · `EKPO` · `VBAK`/`VBFA` |
+| 🛒 采购三单匹配 | PO × GR × IR 三向核对、差异分类 | 6 | `(EBELN, EBELP)` |
+| 💰 销售三单匹配 | OMS / DMS / SAP 多源核对 | 9 | `(VKORG, VBELN, POSNR)` |
+| 🧾 SAP JE Testing | 序时账 – 余额勾稽 | 3 | 期初 + 发生额 − 期末 = 0 |
+| 🧰 工具 & CAATS | 匹配 / 合并 / 校验 / 勾稽 SQL | 4 | — |
+| 📚 方法论 & 技能 | 可移植审计技能包 / 计价复核 | 2 | — |
+
+<sub>*Coverage across 6 domains; exact match keys follow each ERP's standard document structures (see References).*</sub>
+
+## 🔄 工作流 · Pipeline
+
+```mermaid
+flowchart LR
+    A["数据源<br/>SAP · U8 · 金蝶 · OMS · DMS"] --> B["抽取 & 标准化<br/>ABAP KAAP / API / 导出"]
+    B --> C{"多源核对引擎"}
+    C --> D["采购三单<br/>PO × GR × IR"]
+    C --> E["销售三单<br/>OMS / DMS / SAP"]
+    C --> F["JE 测试<br/>序时账 − 余额勾稽"]
+    D --> G["差异识别与分类<br/>按业务规则打标"]
+    E --> G
+    F --> G
+    G --> H["可复核输出<br/>口径 + 源逻辑 + 运行记录"]
+```
 
 ## 🧠 核心方法论 · Methodology
 
