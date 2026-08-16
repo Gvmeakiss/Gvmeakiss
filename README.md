@@ -120,14 +120,46 @@
 | [CRRC_DT](https://github.com/Gvmeakiss/CRRC_DT) | CRRC 多公司 JE 会计分录测试：序时账合并 + 期初/发生额/期末余额勾稽（基于 ACDOCA / BKPF / BSEG） | 通用 | `Python` · `SAP` |
 | [CRRC_XC](https://github.com/Gvmeakiss/CRRC_XC) | CRRC 材料板块多公司 JE 测试：序时账合并 + 余额交叉验证（基于 BKPF / BSEG） | 通用 | `Python` · `SAP` |
 
-### 🧰 工具
+### 🧰 工具 & CAATS
 
-| 仓库 | 说明 | 类型 | 技术 |
+> 工具类仓库按「一个仓库 = 一组相关工具」组织；下表按子工具 / SQL 模板逐条拆分，并链接至具体文件，便于检索与复用。
+
+#### ★ test-tools · SAP MM 三单匹配诊断与数据质量
+
+| 子工具 | 说明 | 类型 | 技术 |
 |---|---|---|---|
-| [test-tools](https://github.com/Gvmeakiss/test-tools) | ★ SAP MM 三单匹配诊断与数据质量工具 | 通用 | `Python` |
-| [dtt-python-tools](https://github.com/Gvmeakiss/dtt-python-tools) | Deloitte 归档中的通用 Python 工具（Excel 合并 / 模拟数据 / 编码提取 / 爬虫），脱敏后开源 | 通用 | `Python` |
-| [dtt-caats-sql](https://github.com/Gvmeakiss/dtt-caats-sql) | 通用 CAATS / 勾稽 SQL 模板（销售三单匹配 / 分红赎回 / 会员权责），客户名已脱敏为 HM/BHYH/BHSZ/CSDN | 通用 | `SQL` |
-| [dylan-tool](https://github.com/Gvmeakiss/dylan-tool) | 通用期末余额交叉验证工具（期初 + 凭证净额 − 期末 = 0），脱敏版平衡勾稽方法论 | 通用 | `Python` |
+| [data_merge · 数据合并](https://github.com/Gvmeakiss/test-tools/blob/main/data_merge/merge_all_mm_data.py) | MM 多源数据自动合并（订单 / 收货 / 发票） | 通用 | `Python` |
+| [data_quality · 列校验](https://github.com/Gvmeakiss/test-tools/blob/main/data_quality/check_columns.py) | 列结构一致性校验（缺失 / 错位 / 类型） | 通用 | `Python` |
+| [data_quality · 质量检查](https://github.com/Gvmeakiss/test-tools/blob/main/data_quality/check_data_quality.py) | 空值 / 重复 / 范围等数据质量规则检查 | 通用 | `Python` |
+| [diagnostics · 匹配诊断](https://github.com/Gvmeakiss/test-tools/blob/main/diagnostics/why_match_was_zero.py) | 三单匹配为零归因诊断（定位断点） | 通用 | `Python` |
+
+#### 🔧 dtt-python-tools · 通用 Python 工具（已脱敏）
+
+| 子工具 | 说明 | 类型 | 技术 |
+|---|---|---|---|
+| [Excel 合并（脚本）](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/merge_excel_tool.py) | 多工作簿 / 工作表批量合并 | 通用 | `Python` |
+| [Excel 合并（Notebook）](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/excel_files_merger.ipynb) | 交互式 Excel 合并示例 | 通用 | `Jupyter` |
+| [模拟数据生成](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/random_data_generator.ipynb) | 生成脱敏模拟数据集，用于工具自测 | 通用 | `Jupyter` |
+| [项目编码提取](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/project_code_extractor.ipynb) | 从文本 / 文档提取结构化项目编码 | 通用 | `Jupyter` |
+| [网页爬虫](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/web_crawler.ipynb) | 通用网页数据采集模板 | 通用 | `Jupyter` |
+
+#### 🔧 dtt-caats-sql · 通用 CAATS / 勾稽 SQL 模板（已脱敏）
+
+| 模板 | 说明 | 类型 | 技术 |
+|---|---|---|---|
+| [销售订单匹配](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/HM/01_sales_order_match.sql) | 销售订单 ↔ 收入勾稽、退货冲红、外币折算 | 通用 | `SQL` |
+| [物料追溯](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/HM/02_material_trace.sql) | BOM 产出 ↔ 组件消耗勾稽、重复值检测 | 通用 | `SQL` |
+| [出库单分析](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/JSM/01_data_analysis.sql) | 交付 / 退货 / 刷单 / 渠道集中度分析 | 通用 | `SQL` |
+| [佣金 CAATS](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/BHSZ/01_caats.sql) | 成交金额 × 佣金率 vs 账面重算 | 通用 | `SQL` |
+| [利息预提 JAT](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/BHYH/01_jat_caats.sql) | 应付利息应计重算（JAT） | 通用 | `SQL` |
+| [会员对账](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/CSDN/01_member_recon.sql) | 多支付渠道流水合并对账 | 通用 | `SQL` |
+| [会员权责](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/CSDN/02_member_rights_logic.sql) | 会员递延收益按天摊销（Hive） | 通用 | `SQL` |
+
+#### 🔧 dylan-tool · 通用期末余额交叉验证
+
+| 工具 | 说明 | 类型 | 技术 |
+|---|---|---|---|
+| [余额交叉验证](https://github.com/Gvmeakiss/dylan-tool/blob/main/balance_cross_validator.py) | 期初 + 凭证净额 − 期末 = 0 的批量勾稽 | 通用 | `Python` |
 
 ---
 
@@ -139,10 +171,10 @@
 | 🛒 采购三单匹配 | PO × GR × IR 三向核对、差异分类 | 6 | `(EBELN, EBELP)` |
 | 💰 销售三单匹配 | OMS / DMS / SAP 多源核对 | 9 | `(VKORG, VBELN, POSNR)` |
 | 🧾 SAP JE Testing | 序时账 – 余额勾稽 | 3 | 期初 + 发生额 − 期末 = 0 |
-| 🧰 工具 & CAATS | 匹配 / 合并 / 校验 / 勾稽 SQL | 4 | — |
+| 🧰 工具 & CAATS | 匹配 / 合并 / 校验 / 勾稽 SQL | 4 仓库 · 17 工具 | — |
 | 📚 方法论 & 技能 | 可移植审计技能包 / 计价复核 | 2 | — |
 
-<sub>*Coverage across 6 domains; exact match keys follow each ERP's standard document structures (see References).*</sub>
+<sub>*Coverage across 6 domains & 25 repos; the 工具 & CAATS row is split into 17 individual tools / SQL templates (see the 🧰 工具 section). Exact match keys follow each ERP's standard document structures (see References).*</sub>
 
 ## 🔄 工作流 · Pipeline
 
