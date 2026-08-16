@@ -52,6 +52,16 @@
 | [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | `Excel` · `U8` |
 | [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | Miaoke ToC 四段 pairwise 对账（旺店通 → 惠策 → OMS → SAP） | `Python` · `Pandas` |
 
+### 🌟 SAP 取数能力（亮点）
+
+> sap-abap-data-extraction 是执行三单匹配与序时账核对的基础。按 FI / MM / SD 三个模块配置 KAAP 取数脚本，分别支撑财务核算、采购与销售三单匹配。
+
+| 模块 | 功能说明 | 类型 | 技术 |
+|---|---|---|---|
+| [🧾 FI — 财务取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/FI_SAP_ECC6.xml) | 抽序时账（BKPF + BSEG）与余额表（FAGLFLEXT / GLT0）、次要索引、科目主数据，支撑**序时账-课余表勾稽** | 通用 | `ABAP` · `XML` |
+| [🔄 MM — 采购取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/MM_SAP_ECC6.xml) | 抽订单 / 采购历史（EKBE 枢纽）/ 收货 / 发票，支撑**采购三单匹配** | 通用 | `ABAP` · `XML` |
+| [🔄 SD — 销售取数](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/xml%20File/Extraction_Tool_MN_2023_1-8_dryRun_20230912/SD_SAP_ECC6.xml) | 抽订单 / 交货 / 开票 / 凭证流（VBFA），支撑**销售三单匹配** | 通用 | `ABAP` · `XML` |
+
 ### 🔍 审计数据分析 · 2
 
 | 仓库 | 说明 | 类型 | 技术 |
