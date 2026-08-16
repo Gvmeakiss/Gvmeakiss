@@ -38,7 +38,17 @@
 
 ## 📂 项目矩阵 · Projects
 
-<p style="color:#d73a49;font-weight:bold">⚠️ 声明 / Disclaimer：本主页仅分享无收益分成（no-revenue-sharing）的代码处理逻辑；所有敏感信息（客户名、法律实体、内部标识）均已脱敏；任何财务数据与客户底稿均不上传。<br><sub>Only no-revenue-sharing code logic is shared; all sensitive information is desensitized; no financial data or client working papers are uploaded.</sub></p>
+<p style="color:#d73a49;font-weight:bold">⚠️ 数据合规声明 / Data Compliance Disclaimer</p>
+
+本主页仅用于技术交流，分享**无收益分成（no-revenue-sharing）**的通用代码处理逻辑。所有公开内容已依据下列法律法规进行脱敏处理：
+
+- **《中华人民共和国个人信息保护法》第五十一条、第七十三条** — 对涉及的个人信息采取 **去标识化（de-identification）** 处理（删除直接标识符，使信息在不借助额外信息时无法识别特定自然人），并尽量达到 **匿名化** 标准；
+- **《中华人民共和国数据安全法》第二十一条、第二十七条** — 对数据实行 **分类分级保护**，并针对公开内容采取相应的技术保护措施，保障数据安全；
+- **《中华人民共和国反不正当竞争法》第九条** — 对原项目中的 **商业秘密**（客户名称、法律实体、内部标识、经营数据等）予以剔除与脱敏，避免不当披露。
+
+**脱敏范围**：客户名称、法律实体、内部标识/代号、真实地址、支付与账户信息、订单/商品编码、财务数据及任何客户底稿（xlsx / sql / zip 等）。**任何财务数据与客户工作底稿均不在本主页及其仓库中存储或上传。**
+
+<sub>All content shared here is for technical exchange only, on a no-revenue-sharing basis, and has been desensitized in accordance with the PIPL (de-identification / anonymization), the Data Security Law (classification, graded protection & technical safeguards), and the Anti-Unfair-Competition Law (trade-secret protection). No financial data or client working papers are stored or uploaded.</sub>
 
 > 20 个公开仓库，按能力域分组；**★ 为核心可复用工具**（建议先看），「类型」标注其适用边界（通用底座 / 具体客户项目）。
 > <sub>*20 public repos grouped by capability; ★ marks core reusable tools (start here). The 类型 column marks the scope: generic foundation vs. client-specific project.*</sub>
