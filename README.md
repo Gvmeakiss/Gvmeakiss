@@ -37,6 +37,13 @@
   <sub>*Turning audit logic into reusable data tools — purchase / sales three-way matching, SAP data extraction, multi-source reconciliation.*</sub>
 
 
+## 📓 个人笔记 · Notebook
+
+| 仓库 | 说明 |
+|---|---|
+| [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook) | 个人技术笔记本 · 通用工具配置收录（Shadowrocket 通用分流配置：国内外分流 / 去广告 / 长连接优化） |
+
+
 ## 📂 项目矩阵 · Projects
 
 <p style="color:#d73a49;font-weight:bold">⚠️ 数据合规声明 / Data Compliance Disclaimer</p>
