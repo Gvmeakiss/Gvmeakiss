@@ -184,34 +184,6 @@
 
 ---
 
-## 🧩 能力覆盖矩阵 · Capability Coverage
-
-| 能力域 | 核心技法 | 仓库 | 关键匹配键 / 公式 |
-|---|---|---|---|
-| 📥 SAP ABAP 取数 | FI / MM / SD 标准底表抽取 | 1 | `BKPF`/`BSEG` · `EKPO` · `VBAK`/`VBFA` |
-| 🛒 采购三单匹配 | PO × GR × IR 三向核对、四大类十三子类差异 | 3 核心 (+3 客户) | `(EBELN, EBELP)` |
-| 💰 销售三单匹配 | OMS / DMS / SAP 多源核对、13 场景 / 5 类差异 | 3 核心 (+5 客户) | `(VKORG, VBELN, POSNR)` |
-| 🧾 SAP JE Testing | 序时账 – 余额勾稽 / HRC 筛查 | 5 | 期初 + 发生额 − 期末 = 0 |
-| 🧰 工具 & CAATS | 匹配 / 合并 / 校验 / 勾稽 SQL / 数据工具 | 6 仓库 · 24 工具 | — |
-| 📚 方法论 & 技能 | 可移植审计技能包 / 计价复核 | 2 | — |
-
-<sub>*Coverage across 6 domains & 29 repos; the 工具 & CAATS row is split into 24 individual tools / SQL templates (see the 🧰 工具 section). Exact match keys follow each ERP's standard document structures (see References).*</sub>
-
-## 🔄 工作流 · Pipeline
-
-```mermaid
-flowchart LR
-    A["数据源<br/>SAP · U8 · 金蝶 · OMS · DMS"] --> B["抽取 & 标准化<br/>ABAP KAAP / API / 导出"]
-    B --> C{"多源核对引擎"}
-    C --> D["采购三单<br/>PO × GR × IR"]
-    C --> E["销售三单<br/>OMS / DMS / SAP"]
-    C --> F["JE 测试<br/>序时账 − 余额勾稽"]
-    D --> G["差异识别与分类<br/>按业务规则打标"]
-    E --> G
-    F --> G
-    G --> H["可复核输出<br/>口径 + 源逻辑 + 运行记录"]
-```
-
 ## 🧠 核心方法论 · Methodology
 
 - **三单匹配（Three-Way Matching）**：采购订单 / 收货单 / 发票 三方核对，定位差异并分类
