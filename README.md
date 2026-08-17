@@ -61,9 +61,8 @@
 | ★ [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD），分模块取数范围与审计场景映射（三单匹配 / 序时账-余额核对） | 通用 | `ABAP` · `XML` · `PDF` |
 | [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个可移植 Codex 审计数据分析技能（含 workbench 路由） | 通用 | `Skills` · `Codex` |
 | [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | 可配置通用数据匹配工具包（SQL 解析 / 缓存 / 匹配键 / 分类驱动） | 通用 | `Python` · `Pandas` |
-| [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | Miaoke ToB 销售 OMS / DMS 双源三单匹配（5 类差异） | 客户专属 | `Python` |
+| ★ [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | OMS / DMS 双源销售三单匹配（5 类差异，多销售组织分组导出） | 通用 | `Python` |
 | [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | 通用 | `Excel` · `U8` |
-| [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) | Miaoke ToC 四段 pairwise 对账（某电商平台 → 某订单中台 → OMS → SAP） | 客户专属 | `Python` · `Pandas` |
 
 ### 📥 SAP ABAP 取数工具（FI / MM / SD）
 
@@ -85,11 +84,11 @@
 | [purchase-three-match-toolkit](https://github.com/Gvmeakiss/purchase-three-match-toolkit) | SAP MM 采购三单匹配（四大类十三子类差异分析，KPMG 格式 TXT） | 通用 | `Python` · `Pandas` |
 | [purchase-three-match-final](https://github.com/Gvmeakiss/purchase-three-match-final) | 采购三单匹配整合版（四大类13子类，SAP ECC/S4） | 通用 | `Python` |
 
-<details><summary>客户落地实现（NewHope / AQPP / Miaoke 专属，逻辑同核心工具包）</summary>
+<details><summary>客户落地实现（客户N / 客户Q / 客户M 专属，逻辑同核心工具包）</summary>
 
-- [purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope) — NewHope 采购三单匹配落地版（含 SAP 取数配套文档）
-- [purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp) — AQPP 2026 三单匹配归档索引（订单 / 发运 / 发票，AQPP-01~24）
-- [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) — Miaoke 2026H1 采购三单匹配（订单行粒度全外连接 + AQPP 24 组）
+- [purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope) — 客户N 采购三单匹配落地版（含 SAP 取数配套文档）
+- [purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp) — 客户Q 2026 三单匹配归档索引（订单 / 发运 / 发票，客户Q-01~24）
+- [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) — 客户M 2026H1 采购三单匹配（订单行粒度全外连接 + 客户Q 24 组）
 
 </details>
 
@@ -103,14 +102,14 @@
 | [sales-three-match-toolkit](https://github.com/Gvmeakiss/sales-three-match-toolkit) | SAP SD 销售三单匹配（大表 30GB+ 优化 / 负开票冲账 / Untested 四表） | 通用 | `Python` · `Pandas` |
 | ★ [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | OMS / DMS 双源销售三单匹配（5 类差异，多销售组织分组导出） | 通用 | `Python` |
 
-<details><summary>客户落地实现（NewHope / Miaoke 专属，逻辑同核心工具包）</summary>
+<details><summary>客户落地实现（客户N / 客户M 专属，逻辑同核心工具包）</summary>
 
-- [sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope) — NewHope 销售三单匹配实施版（含使用示例与排错）
-- [sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026) — NewHope 2026 销售三单匹配（AQPP 无交货金额 24 子组）
-- [sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026) — Miaoke 2026H1 销售三单匹配（OMS / DMS 双渠道 AQPP-01~24）
-- [miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025) — Miaoke 2025 全年 ToB 销售三单匹配（FY25 五分类）
-- [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) — Miaoke 2026H1 ToB 销售三单匹配（冲销前置 / PBC 拆分 / 单测）
-- [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) — Miaoke ToC 四段 pairwise 对账（某电商平台 → 某订单中台 → OMS → SAP）
+- [sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope) — 客户N 销售三单匹配实施版（含使用示例与排错）
+- [sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026) — 客户N 2026 销售三单匹配（客户Q 无交货金额 24 子组）
+- [sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026) — 客户M 2026H1 销售三单匹配（OMS / DMS 双渠道 客户Q-01~24）
+- [miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025) — 客户M 2025 全年 ToB 销售三单匹配（FY25 五分类）
+- [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) — 客户M 2026H1 ToB 销售三单匹配（冲销前置 / PBC 拆分 / 单测）
+- [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) — 客户M ToC 四段 pairwise 对账（某电商平台 → 某订单中台 → OMS → SAP）
 
 </details>
 
