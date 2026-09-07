@@ -1,5 +1,7 @@
 <div align="center">
 
+<p align="center"><b>Language · 语言</b>&nbsp;&nbsp;<a href="#zh"><code>🇨🇳 中文</code></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#en"><code>🇬🇧 English</code></a></p>
+
 # 👋 Hi, I'm James Li
 
 **IT Audit · Data Analytics · ERP Data Matching**
@@ -29,6 +31,10 @@
 
 ---
 
+<a name="zh"></a>
+
+# 🇨🇳 中文
+
 ## 🧑‍💻 关于我 · About
 
 - 四大IT审计背景（DTT*2year、KPMG*2year），现专注审计数据分析与自动化工具建设
@@ -36,13 +42,11 @@
 - 把审计逻辑沉淀为可复用的数据工具，覆盖采购 / 销售三单匹配、SAP 取数、多源对账
   <sub>*Turning audit logic into reusable data tools — purchase / sales three-way matching, SAP data extraction, multi-source reconciliation.*</sub>
 
-
 ## 📓 个人笔记 · Notebook
 
 | 仓库 | 说明 |
 |---|---|
-| [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook) | 个人技术笔记本 · 通用工具配置收录（Shadowrocket 通用分流配置：国内外分流 / 去广告 / 长连接优化） |
-
+| [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook) | 个人技术笔记本（双语）：AI Skill（截图文字高保真修改）· Shadowrocket 通用分流配置 · **audit-kanban 离线稽核工作进度看板演示应用**（纯前端，脱敏） |
 
 ## 📂 项目矩阵 · Projects
 
@@ -66,7 +70,7 @@
 | 仓库 | 说明 | 类型 | 技术 |
 |---|---|---|---|
 | ★ [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD），分模块取数范围与审计场景映射（三单匹配 / 序时账-余额核对） | 通用 | `ABAP` · `XML` · `PDF` |
-| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | 7 个可移植 Codex 审计数据分析技能（含 workbench 路由） | 通用 | `Skills` · `Codex` |
+| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | **8 个**可移植 Codex 审计数据分析技能（含 workbench 路由、DA routine 底稿生成、配套模板与参考底稿） | 通用 | `Skills` · `Codex` |
 | [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | 可配置通用数据匹配工具包（SQL 解析 / 缓存 / 匹配键 / 分类驱动） | 通用 | `Python` · `Pandas` |
 | ★ [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | OMS / DMS 双源销售三单匹配（5 类差异，多销售组织分组导出） | 通用 | `Python` |
 | [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | 通用 | `Excel` · `U8` |
@@ -188,8 +192,6 @@
 |---|---|---|---|
 | [订单分析](https://github.com/Gvmeakiss/ecommerce-order-analytics/blob/main/order_analytics.py) | 某电商平台订单多维分析（GMV / 复购 / 客单价） | 通用 | `Python` · `Pandas` |
 
----
-
 ## 🧠 核心方法论 · Methodology
 
 - **三单匹配（Three-Way Matching）**：采购订单 / 收货单 / 发票 三方核对，定位差异并分类
@@ -198,8 +200,6 @@
   <sub>*Multi-source reconciliation: consistency checks across OMS / DMS / SAP.*</sub>
 - **可复核输出**：每个结论附带口径说明、源数据逻辑与运行记录，支撑审计留痕
   <sub>*Reviewable output: every result ships with its basis, source-data logic and run records for audit trail.*</sub>
-
----
 
 ## 📚 参考与官方文档 · References
 
@@ -220,6 +220,144 @@
 - [金蝶开放平台](https://open.kingdee.com/) — 金蝶云·苍穹 / K/3 开放 API 与集成规范
 - [金蝶开发者社区](https://dev.kingdee.com/) — 苍穹 PaaS 平台开发文档与数据模型
 - [金蝶官网](https://www.kingdee.com/) — 产品与模块总览
+
+---
+
+<a name="en"></a>
+
+# 🇬🇧 English
+
+## 🧑‍💻 About
+
+- Big-4 IT audit background (2 yrs DTT, 2 yrs KPMG); now focused on audit data analytics and automation tooling
+- Turning audit logic into reusable data tools — purchase / sales three-way matching, SAP data extraction, multi-source reconciliation
+
+## 📓 Notebook
+
+| Repo | Description |
+|---|---|
+| [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook) | Bilingual personal tech notebook: AI Skills (high-fidelity text editing in screenshots) · Shadowrocket general-purpose routing config · **audit-kanban demo** (offline audit work-progress kanban, pure front-end, desensitized) |
+
+## 📂 Projects
+
+<p style="color:#d73a49;font-weight:bold">⚠️ Data Compliance Disclaimer</p>
+
+Content shared here is for technical exchange only, on a **no-revenue-sharing** basis, and has been desensitized in accordance with:
+
+- **PIPL (Art. 51, 73)** — personal information is **de-identified** (direct identifiers removed so individuals cannot be identified without additional info) and, where possible, **anonymized**;
+- **Data Security Law (Art. 21, 27)** — data is subject to **classification & graded protection**, with technical safeguards applied to public content;
+- **Anti-Unfair-Competition Law (Art. 9)** — **trade secrets** from original engagements (client names, legal entities, internal identifiers, operating data, etc.) are removed or desensitized.
+
+**Desensitization scope**: client names, legal entities, internal codes, real addresses, payment/account info, order/product codes, financial data and any client workpapers (xlsx / sql / zip, etc.). **No financial data or client working papers are stored or uploaded on this profile or in its repos.**
+
+> 29 public repos grouped by capability; ★ marks core reusable tools (start here). The scope column marks generic foundation vs. client-specific projects.
+
+### ⭐ Core Repos
+
+| Repo | Description | Scope | Tech |
+|---|---|---|---|
+| ★ [sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction) | SAP ABAP data-extraction (KAAP) config & runbook for FI / MM / SD — scoping and audit-scenario mapping (three-way match / journal-ledger reconciliation) | Generic | `ABAP` · `XML` · `PDF` |
+| [kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills) | **8** portable Codex audit-data-analytics skills (incl. workbench router, DA-routine workpaper generation, bundled template & reference) | Generic | `Skills` · `Codex` |
+| [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | Configurable generic matching toolkit (SQL parsing / caching / match keys / classification-driven) | Generic | `Python` · `Pandas` |
+| ★ [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | OMS / DMS dual-source sales three-way match (5 variance classes, grouped export by sales org) | Generic | `Python` |
+| [u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation) | U8 inventory issue-valuation audit review (CAATS / ITA segregated dual workbooks) | Generic | `Excel` · `U8` |
+
+### 📥 SAP ABAP Data Extraction (FI / MM / SD)
+
+> `sap-abap-data-extraction` is the foundation for three-way matching and journal-ledger checks. KAAP extraction scripts are configured per module — FI / MM / SD — to support financial accounting, purchase and sales matching.
+
+| Repo | Description | Scope | Tech |
+|---|---|---|---|
+| [📒 FI — Financial](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/FI/README.md) | Journals (BKPF + BSEG) and balances (FAGLFLEXT / GLT0), secondary indexes, account masters — supports journal-ledger reconciliation | Generic | `ABAP` · `XML` |
+| [📦 MM — Procurement](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/MM/README.md) | Orders / purchase history (EKBE hub) / goods receipts / invoices — supports purchase three-way match | Generic | `ABAP` · `XML` |
+| [🚚 SD — Sales](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/SD/README.md) | Orders / deliveries / billing / document flow (VBFA) — supports sales three-way match | Generic | `ABAP` · `XML` |
+
+### 🛒 Three-Way Match · Purchase
+
+> Purchase order (PO) × goods receipt (GR) × invoice (IR), joined on `(EBELN, EBELP)`, producing **4 major / 13 sub variance classes** with reviewable audit workpapers. Core reusable toolkits below; client-specific deployments are folded.
+
+| Repo | Description | Scope | Tech |
+|---|---|---|---|
+| ★ [purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable) | Configurable generic matching engine (SQL parsing / caching / match keys / classification / Excel export) | Generic | `Python` · `Pandas` |
+| [purchase-three-match-toolkit](https://github.com/Gvmeakiss/purchase-three-match-toolkit) | SAP MM purchase three-way match (4/13 variance classes, KPMG-format TXT) | Generic | `Python` · `Pandas` |
+| [purchase-three-match-final](https://github.com/Gvmeakiss/purchase-three-match-final) | Integrated purchase three-way match (4/13 classes, SAP ECC/S4) | Generic | `Python` |
+
+<details><summary>Client deployments (Client N / Q / M specific; same logic as core toolkit)</summary>
+
+- [purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope) — Client N purchase three-way match (with SAP extraction docs)
+- [purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp) — Client Q 2026 matching archive index (order / delivery / invoice, AQPP-01~24)
+- [miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026) — Client M 2026H1 purchase three-way match (line-level full outer join + AQPP 24 groups)
+
+</details>
+
+### 💰 Three-Way Match · Sales
+
+> Sales order × delivery × invoice, covering SAP SD (`(VKORG, VBELN, POSNR)` / `AUBEL, AUPOS`) and OMS / DMS dual sources — **13 scenarios / 5 variance classes**. Core reusable toolkits below; client-specific deployments are folded.
+
+| Repo | Description | Scope | Tech |
+|---|---|---|---|
+| ★ [sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match) | SAP SD sales three-way match (13 scenarios, parallel by company, key fallback + debit/credit signs) | Generic | `Python` · `SAP` |
+| [sales-three-match-toolkit](https://github.com/Gvmeakiss/sales-three-match-toolkit) | SAP SD sales three-way match (30GB+ big-table optimization / credit-memo offset / Untested 4-table) | Generic | `Python` · `Pandas` |
+| ★ [sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match) | OMS / DMS dual-source sales three-way match (5 variance classes, grouped export by sales org) | Generic | `Python` |
+
+<details><summary>Client deployments (Client N / M specific; same logic as core toolkit)</summary>
+
+- [sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope) — Client N sales three-way match (with examples & troubleshooting)
+- [sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026) — Client N 2026 sales three-way match (AQPP 24 sub-groups)
+- [sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026) — Client M 2026H1 sales three-way match (OMS / DMS dual channel, AQPP-01~24)
+- [miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025) — Client M FY2025 full-year ToB sales three-way match (5 classes)
+- [miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026) — Client M 2026H1 ToB sales three-way match (cancellation pre-processing / PBC split / unit tests)
+- [miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c) — Client M ToC 4-segment pairwise reconciliation (e-commerce platform → order hub → OMS → SAP)
+
+</details>
+
+### 🧾 SAP JE Testing
+
+| Repo | Description | Scope | Tech |
+|---|---|---|---|
+| [sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1) | SAP FI 2026H1 journal entry testing: ACDOCA / BKPF / FAGLFLEXT extraction, posting reconciliation & anomaly screening | Generic | `Python` · `SAP` |
+| [CRRC_DT](https://github.com/Gvmeakiss/CRRC_DT) | CRRC multi-company JE test: journal consolidation + opening/activity/closing balance check (ACDOCA / BKPF / BSEG) | Generic | `Python` · `SAP` |
+| [CRRC_XC](https://github.com/Gvmeakiss/CRRC_XC) | CRRC materials segment multi-company JE test: journal consolidation + balance cross-validation (BKPF / BSEG) | Generic | `Python` · `SAP` |
+| [je-high-risk-screening](https://github.com/Gvmeakiss/je-high-risk-screening) | SAP JE high-risk classification screening (HRC1/2/3 generic rules, anomalous-journal detection) | Generic | `SQL` · `Python` |
+| [sap-je-toolkit](https://github.com/Gvmeakiss/sap-je-toolkit) | SAP multi-company JE toolkit: journal consolidation + opening/activity/closing balance check + cross-validation | Generic | `Python` · `SAP` |
+
+### 🧰 Tools & CAATS
+
+> Utility repos are organized as "one repo = one family of tools". The Chinese section above breaks these into per-tool / per-SQL-template tables with direct links; the table below lists each repo with its highlights.
+
+| Repo | Highlights | Scope | Tech |
+|---|---|---|---|
+| [test-tools](https://github.com/Gvmeakiss/test-tools) | SAP MM matching diagnostics & data quality — multi-source merge, column checks, quality rules, why-match-was-zero diagnosis | Generic | `Python` |
+| [dtt-python-tools](https://github.com/Gvmeakiss/dtt-python-tools) | Generic Python utilities — Excel merge, mock-data generation, project-code extraction, web crawler | Generic | `Python` · `Jupyter` |
+| [dtt-caats-sql](https://github.com/Gvmeakiss/dtt-caats-sql) | Generic CAATS / reconciliation SQL templates — sales-order match, material trace, outbound analysis, commission CAATS, interest JAT, member recon/rights | Generic | `SQL` |
+| [dylan-tool](https://github.com/Gvmeakiss/dylan-tool) | Generic closing-balance cross-validation (opening + net postings − closing = 0) | Generic | `Python` |
+| [audit-data-utilities](https://github.com/Gvmeakiss/audit-data-utilities) | Generic audit data utilities — mock journal/balance generators, integrity validator, Excel merge, preprocess, SQL→table | Generic | `Python` |
+| [ecommerce-order-analytics](https://github.com/Gvmeakiss/ecommerce-order-analytics) | E-commerce order multi-dimensional analytics (GMV / repurchase / AOV) | Generic | `Python` · `Pandas` |
+
+## 🧠 Methodology
+
+- **Three-Way Matching**: cross-check purchase order / goods receipt / invoice; locate and classify variances
+- **Multi-source Reconciliation**: consistency checks across OMS / DMS / SAP
+- **Reviewable Output**: every result ships with its basis, source-data logic and run records for audit trail
+
+## 📚 References
+
+> The reconciliation logic relies on each ERP's standard data structures and interfaces. Official vendor docs below serve as the authoritative basis for data scoping and field mapping.
+
+### 🟦 SAP (ECC / S/4HANA)
+- [SAP Help Portal](https://help.sap.com/docs/) — official help portal covering all ECC / S/4HANA modules
+- [SAP ERP (ECC) Docs](https://help.sap.com/docs/SAP_ERP) — standard configuration and table structures for MM / SD / FI
+- [SAP S/4HANA Docs](https://help.sap.com/docs/SAP_S4HANA_ON_PREMISE) — S/4HANA general ledger (ACDOCA) and document architecture
+- [ABAP Keyword / Data Dictionary](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/index.htm) — fields & domains of standard tables (BKPF / BSEG / EKPO / VBAK …)
+
+### 🟥 Yonyou (U8)
+- [Yonyou Developer Center](https://developer.yonyou.com/) — open APIs & dev docs for U8 / U9 / NC
+- [Yonyou U8 Product & Docs](https://u8.yonyou.com/) — U8 inventory / supply chain / finance module guides
+
+### 🟩 Kingdee
+- [Kingdee Open Platform](https://open.kingdee.com/) — Kingdee Cloud·Cosmic / K/3 open APIs & integration specs
+- [Kingdee Developer Community](https://dev.kingdee.com/) — Cosmic PaaS development docs & data models
+- [Kingdee Official Site](https://www.kingdee.com/) — product & module overview
 
 ---
 
