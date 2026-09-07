@@ -1,12 +1,14 @@
 <div align="center">
 
+<a name="top"></a>
+
 <p align="center"><b>Language · 语言</b>&nbsp;&nbsp;<a href="#zh"><code>🇨🇳 中文</code></a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#en"><code>🇬🇧 English</code></a></p>
 
 # 👋 Hi, I'm James Li
 
 **IT Audit · Data Analytics · ERP Data Matching**
 
-专注于四大IT审计需求的自动化工具构建的机车佬：从 SAP ECC & S4 Hana/ 用友U8 / OMS / DMS / 金蝶 等多源系统提取数据，构建采购、销售三单匹配、业财核对、经营数据分析、JETesting 等对账流程，输出可复核、可追溯的差异分析结果。
+专注于四大IT审计需求的自动化工具构建的机车佬：从 SAP ECC & S/4HANA/ 用友U8 / OMS / DMS / 金蝶 等多源系统提取数据，构建采购、销售三单匹配、业财核对、经营数据分析、JETesting 等对账流程，输出可复核、可追溯的差异分析结果。
 
 <sub>*A motorcycle rider building automation tools for Big-4 IT audit: extracting data from SAP ECC & S/4HANA, Yonyou U8, OMS / DMS, Kingdee and more, and building reconciliation pipelines for purchase & sales three-way matching, business-finance reconciliation, operating-data analysis and JE testing — delivering reviewable, traceable variance analysis.*</sub>
 
@@ -23,9 +25,9 @@
 
 <br>
 
-![Project Repos](https://img.shields.io/badge/Project%20Repos-29-blue?style=flat-square)
-![Capability Domains](https://img.shields.io/badge/Capability%20Domains-6-9cf?style=flat-square)
-![Audit Techniques](https://img.shields.io/badge/Audit%20Techniques-3WM%20%7C%20JE%20Testing%20%7C%20CAATS-orange?style=flat-square)
+![Project Repos](https://img.shields.io/badge/Project%20Repos-29-blue)
+![Capability Domains](https://img.shields.io/badge/Capability%20Domains-6-9cf)
+![Audit Techniques](https://img.shields.io/badge/Audit%20Techniques-3WM%20%7C%20JE%20Testing%20%7C%20CAATS-orange)
 
 </div>
 
@@ -33,7 +35,11 @@
 
 <a name="zh"></a>
 
-# 🇨🇳 中文
+## 🇨🇳 中文
+
+<p align="center"><sub>[关于我](#zh-about) · [个人笔记](#zh-notebook) · [项目矩阵](#zh-projects) · [核心方法论](#zh-methodology) · [参考文档](#zh-references)</sub></p>
+
+<a name="zh-about"></a>
 
 ## 🧑‍💻 关于我 · About
 
@@ -41,6 +47,8 @@
   <sub>*Big-4 IT audit background (2 yrs DTT, 2 yrs KPMG), now focused on audit data analytics and automation tooling.*</sub>
 - 把审计逻辑沉淀为可复用的数据工具，覆盖采购 / 销售三单匹配、SAP 取数、多源对账
   <sub>*Turning audit logic into reusable data tools — purchase / sales three-way matching, SAP data extraction, multi-source reconciliation.*</sub>
+
+<a name="zh-notebook"></a>
 
 ## 📓 个人笔记 · Notebook
 
@@ -51,6 +59,8 @@
 | ✂️ screenshot-text-edit（AI Skill） | [skills/screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit) | 截图文字/数字高保真修改（字形克隆法，保真度远高于字体重绘），含 CLI 脚本与 macOS Vision OCR |
 | 📡 shadowrocket（配置 · Config） | [shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket) | Shadowrocket 通用分流配置：国内外分流 / 去广告 / 长连接优化 |
 | 📊 audit-kanban（演示应用 · Demo） | [audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban) | 离线「稽核工作进度看板」演示应用：同事填报 → 专人汇总 → 经理看板（纯前端，脱敏，含虚构演示数据） |
+
+<a name="zh-projects"></a>
 
 ## 📂 项目矩阵 · Projects
 
@@ -196,6 +206,8 @@
 |---|---|---|---|
 | [订单分析](https://github.com/Gvmeakiss/ecommerce-order-analytics/blob/main/order_analytics.py) | 某电商平台订单多维分析（GMV / 复购 / 客单价） | 通用 | `Python` · `Pandas` |
 
+<a name="zh-methodology"></a>
+
 ## 🧠 核心方法论 · Methodology
 
 - **三单匹配（Three-Way Matching）**：采购订单 / 收货单 / 发票 三方核对，定位差异并分类
@@ -204,6 +216,8 @@
   <sub>*Multi-source reconciliation: consistency checks across OMS / DMS / SAP.*</sub>
 - **可复核输出**：每个结论附带口径说明、源数据逻辑与运行记录，支撑审计留痕
   <sub>*Reviewable output: every result ships with its basis, source-data logic and run records for audit trail.*</sub>
+
+<a name="zh-references"></a>
 
 ## 📚 参考与官方文档 · References
 
@@ -229,12 +243,18 @@
 
 <a name="en"></a>
 
-# 🇬🇧 English
+## 🇬🇧 English
+
+<p align="center"><sub>[About](#en-about) · [Notebook](#en-notebook) · [Projects](#en-projects) · [Methodology](#en-methodology) · [References](#en-references)</sub></p>
+
+<a name="en-about"></a>
 
 ## 🧑‍💻 About
 
 - Big-4 IT audit background (2 yrs DTT, 2 yrs KPMG); now focused on audit data analytics and automation tooling
 - Turning audit logic into reusable data tools — purchase / sales three-way matching, SAP data extraction, multi-source reconciliation
+
+<a name="en-notebook"></a>
 
 ## 📓 Notebook
 
@@ -245,6 +265,8 @@
 | ✂️ screenshot-text-edit (AI Skill) | [skills/screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit) | High-fidelity text/digit editing inside screenshots (glyph-cloning, far more faithful than font redraw); CLI scripts + macOS Vision OCR |
 | 📡 shadowrocket (Config) | [shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket) | Shadowrocket general-purpose routing rules (CN/global split, ad-block, long-connection tuning) |
 | 📊 audit-kanban (Demo app) | [audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban) | Offline audit work-progress kanban demo: member updates → consolidator merge → manager board (pure front-end, desensitized, fabricated demo data) |
+
+<a name="en-projects"></a>
 
 ## 📂 Projects
 
@@ -342,11 +364,15 @@ Content shared here is for technical exchange only, on a **no-revenue-sharing** 
 | [audit-data-utilities](https://github.com/Gvmeakiss/audit-data-utilities) | Generic audit data utilities — mock journal/balance generators, integrity validator, Excel merge, preprocess, SQL→table | Generic | `Python` |
 | [ecommerce-order-analytics](https://github.com/Gvmeakiss/ecommerce-order-analytics) | E-commerce order multi-dimensional analytics (GMV / repurchase / AOV) | Generic | `Python` · `Pandas` |
 
+<a name="en-methodology"></a>
+
 ## 🧠 Methodology
 
 - **Three-Way Matching**: cross-check purchase order / goods receipt / invoice; locate and classify variances
 - **Multi-source Reconciliation**: consistency checks across OMS / DMS / SAP
 - **Reviewable Output**: every result ships with its basis, source-data logic and run records for audit trail
+
+<a name="en-references"></a>
 
 ## 📚 References
 
@@ -370,6 +396,8 @@ Content shared here is for technical exchange only, on a **no-revenue-sharing** 
 ---
 
 <div align="center">
+
+<p><a href="#top"><code>⬆ Top · 顶部</code></a> &nbsp;|&nbsp; <a href="#zh"><code>🇨🇳 中文</code></a> · <a href="#en"><code>🇬🇧 English</code></a></p>
 
 *Disclaimer: Personal projects and personal views. Not affiliated with or endorsed by any former employer (DTT / KPMG) or client.*<br>
 *本页内容为个人项目与个人观点，与任何前雇主（DTT / KPMG）及客户无关。*
