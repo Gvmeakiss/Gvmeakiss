@@ -44,9 +44,13 @@
 
 ## 📓 个人笔记 · Notebook
 
-| 仓库 | 说明 |
-|---|---|
-| [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook) | 个人技术笔记本（双语）：AI Skill（截图文字高保真修改）· Shadowrocket 通用分流配置 · **audit-kanban 离线稽核工作进度看板演示应用**（纯前端，脱敏） |
+> 收录于 [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook) 仓库内的三个独立项目。
+
+| 项目 | 位置 | 说明 |
+|---|---|---|
+| ✂️ screenshot-text-edit（AI Skill） | [skills/screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit) | 截图文字/数字高保真修改（字形克隆法，保真度远高于字体重绘），含 CLI 脚本与 macOS Vision OCR |
+| 📡 shadowrocket（配置 · Config） | [shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket) | Shadowrocket 通用分流配置：国内外分流 / 去广告 / 长连接优化 |
+| 📊 audit-kanban（演示应用 · Demo） | [audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban) | 离线「稽核工作进度看板」演示应用：同事填报 → 专人汇总 → 经理看板（纯前端，脱敏，含虚构演示数据） |
 
 ## 📂 项目矩阵 · Projects
 
@@ -234,9 +238,13 @@
 
 ## 📓 Notebook
 
-| Repo | Description |
-|---|---|
-| [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook) | Bilingual personal tech notebook: AI Skills (high-fidelity text editing in screenshots) · Shadowrocket general-purpose routing config · **audit-kanban demo** (offline audit work-progress kanban, pure front-end, desensitized) |
+> Three standalone projects under one repo: [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook).
+
+| Project | Location | Description |
+|---|---|---|
+| ✂️ screenshot-text-edit (AI Skill) | [skills/screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit) | High-fidelity text/digit editing inside screenshots (glyph-cloning, far more faithful than font redraw); CLI scripts + macOS Vision OCR |
+| 📡 shadowrocket (Config) | [shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket) | Shadowrocket general-purpose routing rules (CN/global split, ad-block, long-connection tuning) |
+| 📊 audit-kanban (Demo app) | [audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban) | Offline audit work-progress kanban demo: member updates → consolidator merge → manager board (pure front-end, desensitized, fabricated demo data) |
 
 ## 📂 Projects
 
