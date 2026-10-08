@@ -52,7 +52,7 @@
 
 ## 📓 个人笔记 · Notebook
 
-> 收录于 [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook) 仓库内的四个独立项目。
+> 收录于 [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook) 仓库内的五个独立项目。
 
 | 项目 | 位置 | 说明 |
 |---|---|---|
@@ -60,6 +60,7 @@
 | 📡 shadowrocket（配置 · Config） | [shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket) | Shadowrocket 通用分流配置：国内外分流 / 去广告 / 长连接优化 |
 | 📊 audit-kanban（演示应用 · Demo） | [audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban) | 离线「稽核工作进度看板」演示应用：同事填报 → 专人汇总 → 经理看板（纯前端，脱敏，含虚构演示数据） |
 | 📐 mini-app-spec（技术规范 · Spec） | [mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec) | 企业级「AI Agent 驱动轻应用平台」技术规范（脱敏方法论版）：静态导出 + BFF 中介 + SQL 预定义 + 原子替换部署，含 Agent 开发约定 |
+| 🪟 win-ai-gaming-setup（AI Skill） | [skills/win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup) | **新机一条命令配成「AI 开发 + 游戏」机**：check（引导安装 PowerShell 7 / Scoop / git / 7-Zip、长路径、开发者模式）→ dev（语言工具链 + VS Code / Windows Terminal + 国内镜像）→ apps（SHA256 校验的便携软件）→ tune（先快照，关 GameDVR / 广告推荐 / 遥测）→ link（关联）→ verify（验收）；出故障可按基线回滚，含输入法 / 服务 / 设备三类诊断修复 |
 
 <a name="zh-projects"></a>
 
@@ -259,7 +260,7 @@
 
 ## 📓 Notebook
 
-> Four standalone projects under one repo: [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook).
+> Five standalone projects under one repo: [gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook).
 
 | Project | Location | Description |
 |---|---|---|
@@ -267,6 +268,7 @@
 | 📡 shadowrocket (Config) | [shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket) | Shadowrocket general-purpose routing rules (CN/global split, ad-block, long-connection tuning) |
 | 📊 audit-kanban (Demo app) | [audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban) | Offline audit work-progress kanban demo: member updates → consolidator merge → manager board (pure front-end, desensitized, fabricated demo data) |
 | 📐 mini-app-spec (Tech spec) | [mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec) | Enterprise "AI-Agent-driven light-app platform" technical spec (desensitized methodology edition): static export + BFF mediation + predefined SQL + atomic-swap deployment, with Agent dev conventions |
+| 🪟 win-ai-gaming-setup (AI Skill) | [skills/win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup) | **One command turns a fresh Windows box into an AI-development + gaming machine**: bootstrap (PowerShell 7 / Scoop / git / 7-Zip, long paths, developer mode) → dev toolchain + VS Code / Windows Terminal + domestic mirrors → SHA256-verified portable apps → tune (snapshot first, then GameDVR / ads / telemetry off) → link → verify, with baseline rollback and IME / service / device diagnostics |
 
 <a name="en-projects"></a>
 
