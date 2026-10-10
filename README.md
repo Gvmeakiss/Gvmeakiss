@@ -60,7 +60,7 @@
 | 📡 shadowrocket（配置 · Config） | [shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket) | Shadowrocket 通用分流配置：国内外分流 / 去广告 / 长连接优化 |
 | 📊 audit-kanban（演示应用 · Demo） | [audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban) | 离线「稽核工作进度看板」演示应用：同事填报 → 专人汇总 → 经理看板（纯前端，脱敏，含虚构演示数据） |
 | 📐 mini-app-spec（技术规范 · Spec） | [mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec) | 企业级「AI Agent 驱动轻应用平台」技术规范（脱敏方法论版）：静态导出 + BFF 中介 + SQL 预定义 + 原子替换部署，含 Agent 开发约定 |
-| 🪟 win-ai-gaming-setup（AI Skill） | [skills/win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup) | **新机一条命令配成「AI 开发 + 游戏」机**：check（引导安装 PowerShell 7 / Scoop / git / 7-Zip、长路径、开发者模式）→ dev（语言工具链 + VS Code / Windows Terminal + 国内镜像）→ apps（SHA256 校验的便携软件）→ tune（先快照，关 GameDVR / 广告推荐 / 遥测）→ link（关联）→ verify（验收）；出故障可按基线回滚，含输入法 / 服务 / 设备三类诊断修复 |
+| 🪟 win-ai-gaming-setup（AI Skill） | [skills/win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup) | **新装 Windows 电脑一条命令配成「AI 开发 + 游戏」机并完成系统优化**：装 17 个软件（Scoop 工具链 7 项 + VS Code / Windows Terminal + 4 个便携软件，逐个 SHA256 校验）、做 6 类系统优化（GameDVR / MMCSS / 广告推荐 / 遥测 / 电源 / 鼠标）；七阶段 check → dev → apps → drivers → tune → link → verify，先快照、可按基线回滚，含输入法 / 服务 / 设备三类诊断修复 |
 
 <a name="zh-projects"></a>
 
@@ -268,7 +268,7 @@
 | 📡 shadowrocket (Config) | [shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket) | Shadowrocket general-purpose routing rules (CN/global split, ad-block, long-connection tuning) |
 | 📊 audit-kanban (Demo app) | [audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban) | Offline audit work-progress kanban demo: member updates → consolidator merge → manager board (pure front-end, desensitized, fabricated demo data) |
 | 📐 mini-app-spec (Tech spec) | [mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec) | Enterprise "AI-Agent-driven light-app platform" technical spec (desensitized methodology edition): static export + BFF mediation + predefined SQL + atomic-swap deployment, with Agent dev conventions |
-| 🪟 win-ai-gaming-setup (AI Skill) | [skills/win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup) | **One command turns a fresh Windows box into an AI-development + gaming machine**: bootstrap (PowerShell 7 / Scoop / git / 7-Zip, long paths, developer mode) → dev toolchain + VS Code / Windows Terminal + domestic mirrors → SHA256-verified portable apps → tune (snapshot first, then GameDVR / ads / telemetry off) → link → verify, with baseline rollback and IME / service / device diagnostics |
+| 🪟 win-ai-gaming-setup (AI Skill) | [skills/win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup) | **One command turns a freshly installed Windows box into an AI-development + gaming machine, system optimization included**: installs 17 pieces of software (7-package Scoop toolchain + VS Code / Windows Terminal + 4 SHA256-verified portable apps) and applies 6 categories of tuning (GameDVR / MMCSS / ads & suggestions / telemetry / power plan / mouse acceleration). Seven phases check → dev → apps → drivers → tune → link → verify; snapshot first, roll back from the baseline, with IME / service / device diagnostics |
 
 <a name="en-projects"></a>
 
