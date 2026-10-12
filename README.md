@@ -26,7 +26,7 @@
 
 <br>
 
-<a href="#-动态"><b>📊 动态</b></a> &nbsp;·&nbsp; <a href="#-个人笔记"><b>📓 个人笔记</b></a> &nbsp;·&nbsp; <a href="#-核心工具"><b>🧰 核心工具</b></a> &nbsp;·&nbsp; <a href="#-核心方法论"><b>🧠 方法论</b></a> &nbsp;·&nbsp; <a href="#-参考与官方文档"><b>📚 参考</b></a> &nbsp;·&nbsp; <a href="#compliance"><b>🛡️ 合规</b></a> &nbsp;·&nbsp; <a href="#-english"><b>🌐 English</b></a>
+<a href="#-动态"><b>📊 动态</b></a> &nbsp;·&nbsp; <a href="#-个人笔记"><b>📓 个人笔记</b></a> &nbsp;·&nbsp; <a href="#-核心工具"><b>🧰 核心工具</b></a> &nbsp;·&nbsp; <a href="#-全部仓库"><b>📦 全部仓库</b></a> &nbsp;·&nbsp; <a href="#-核心方法论"><b>🧠 方法论</b></a> &nbsp;·&nbsp; <a href="#-参考与官方文档"><b>📚 参考</b></a> &nbsp;·&nbsp; <a href="#compliance"><b>🛡️ 合规</b></a> &nbsp;·&nbsp; <a href="#-english"><b>🌐 English</b></a>
 
 </div>
 
@@ -61,7 +61,7 @@
 
 ## 📓 个人笔记
 
-> **[gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook)** —— 通用配置、工具说明与 AI Skill 的收纳本。五个独立项目各自成篇，从目录里的 `README.md` 进入。
+> **[gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook)** —— 通用配置、工具说明与 AI Skill 的收纳本。各项目独立成篇，从目录里的 `README.md` 进入。
 
 | 项目 | 说明 |
 |---|---|
@@ -69,7 +69,12 @@
 | 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **新装 Windows 一条命令配成「AI 开发 + 游戏」机** —— 七阶段 `check → dev → apps → drivers → tune → link → verify`，先快照、可按基线回滚 |
 | 📐 **[mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec)**<br><sub>技术规范</sub> | **企业级「AI Agent 驱动轻应用平台」技术规范** —— 静态导出 + BFF 中介 + SQL 预定义 + 原子替换部署 |
 | 📊 **[audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban)**<br><sub>演示应用</sub> | **离线稽核工作进度看板** —— 同事填报 → 专人汇总 → 经理看板；纯前端双击即用，含虚构演示数据 |
-| 📡 **[shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket)**<br><sub>配置</sub> | **通用分流配置** —— 国内外分流 / 去广告 / 长连接优化，Mac 与 iPhone 共用 |
+| 📡 **[shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket)**<br><sub>分流配置</sub> | **通用分流配置** —— 国内外分流 / 去广告 / 长连接优化，Mac 与 iPhone 共用 |
+| 🎤 **[internal-audit-reform](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/internal-audit-reform)**<br><sub>AI 复用项目</sub> | **内部审计整改汇报复用包** —— 可编辑 PPT 终稿、逐页口播稿、复用规范与配图素材库 |
+| 🧩 **[audit-workbench](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-workbench)**<br><sub>工程项目</sub> | **audit-kanban 的 Next.js 工程版** —— 团队分区、阶段历史、挽损分批、归档恢复与 SQLite DDL |
+| ⚙️ **[merlin](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/merlin)**<br><sub>配置与工具</sub> | **梅林 fancyss 分流** —— 分流名单、节点入口绕过生成工具与使用指南 |
+| 📝 **[Windows 环境配置记录](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/windows-environment-setup.md)**<br><sub>实践记录</sub> | **Windows 10 非管理员环境从零配到可用** —— 14 项问题总表、复现命令与 Windows 专属陷阱 |
+| 📝 **[系统调优核查记录](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/system-tweaks-audit.md)**<br><sub>实践记录</sub> | **系统优化项逐条核查依据** —— 与 `win-ai-gaming-setup` 的调优阶段配套 |
 
 ---
 
@@ -79,33 +84,197 @@
 
 > 按日常工作的链路组织：**取数 → 匹配 → 复核 → 沉淀为 Skill**。每个仓库都能独立运行，说明与参数见各自 `README.md`。
 
-### 📥 取数与 JE 核对
+### 📥 SAP ABAP 取数（FI / MM / SD）
 
-| 工具 | 解决的问题 | 关键能力 |
+> 三单匹配与序时账核对的基础。按模块配置 KAAP 取数脚本，分别支撑财务核算、采购与销售三单匹配。
+
+| 模块 | 取数内容 |
+|---|---|
+| [📒 **FI — 财务**](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/FI/README.md) | 序时账（BKPF + BSEG）与余额表（FAGLFLEXT / GLT0）、次要索引、科目主数据，支撑序时账-余额勾稽 |
+| [📦 **MM — 采购**](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/MM/README.md) | 订单 / 采购历史（EKBE 枢纽）/ 收货 / 发票，支撑采购三单匹配 |
+| [🚚 **SD — 销售**](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/SD/README.md) | 订单 / 交货 / 开票 / 凭证流（VBFA），支撑销售三单匹配 |
+
+主仓库：[**sap-abap-data-extraction**](https://github.com/Gvmeakiss/sap-abap-data-extraction) — KAAP 取数配置与操作手册，含分模块取数范围与审计场景映射 · `ABAP` `XML`
+
+### 🛒 三单匹配 · 采购
+
+> 采购订单（PO）× 收货（GR）× 发票（IR），按 `(EBELN, EBELP)` 关联，输出**四大类十三子类**差异分析与可复核审计底稿。
+
+| 仓库 | 说明 | 技术 |
 |---|---|---|
-| 📒 **[sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction)** | SAP 里该取哪些表、字段怎么对上审计科目 | KAAP 取数配置与操作手册，覆盖 **FI / MM / SD**；每模块给出取数范围与审计场景映射（序时账 BKPF + BSEG、余额 FAGLFLEXT / GLT0、订单 / 收货 / 发票、凭证流 VBFA） |
-| 🧾 **[sap-je-toolkit](https://github.com/Gvmeakiss/sap-je-toolkit)** | 多公司序时账合并后，余额到底对不对 | 序时账合并 + **期初 / 发生额 / 期末余额勾稽** + 交叉验证，定位不平的公司与科目 |
+| ★ **[purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable)** | 可配置通用匹配引擎（SQL 解析 / 缓存 / 匹配键 / 差异分类 / Excel 导出，配置驱动） | `Python` `Pandas` |
+| **[purchase-three-match-toolkit](https://github.com/Gvmeakiss/purchase-three-match-toolkit)** | SAP MM 采购三单匹配（四大类十三子类差异分析，KPMG 格式 TXT） | `Python` `Pandas` |
+| **[purchase-three-match-final](https://github.com/Gvmeakiss/purchase-three-match-final)** | 采购三单匹配整合版（四大类 13 子类，SAP ECC / S4）· 已归档 | `Python` |
 
-### 🛒💰 三单匹配与对账
+<details>
+<summary><b>▸ 客户落地实现</b>（客户 N / Q / M 专属，逻辑同核心工具包）</summary>
 
-| 工具 | 解决的问题 | 关键能力 |
+<br>
+
+| 仓库 | 说明 | 技术 |
 |---|---|---|
-| ⚙️ **[purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable)** | 每个项目都重写一遍匹配脚本 | 配置驱动的通用匹配引擎：SQL 解析 / 缓存 / 匹配键 / 差异分类 / Excel 导出 |
-| 🧮 **[sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match)** | OMS / DMS 与 SAP 三方销售数据对不上 | 双源销售三单匹配，输出 **5 类差异**，按销售组织分组导出 |
-| 📊 **[u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation)** | U8 存货发出计价是否算对 | 审计复核双工作簿（CAATS / ITA 职责分离） |
+| **[purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope)** | 客户 N 采购三单匹配落地版（含 SAP 取数配套文档） | `Python` |
+| **[purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp)** | 客户 Q 2026 三单匹配归档索引（订单 / 发运 / 发票，客户 Q-01~24） | — |
+| **[miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026)** | 客户 M 2026H1 采购三单匹配（订单行粒度全外连接 + 客户 Q 24 组） | `Python` |
+
+</details>
+
+### 💰 三单匹配 · 销售
+
+> 销售订单 × 交货单 × 发票，覆盖 SAP SD（`(VKORG, VBELN, POSNR)` / `AUBEL, AUPOS`）与 OMS / DMS 双源，输出 **13 场景 / 5 类差异**。
+
+| 仓库 | 说明 | 技术 |
+|---|---|---|
+| ★ **[sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match)** | SAP SD 销售三单匹配（13 场景，按公司批量并行，关联键回退 + 借贷正负） | `Python` `SAP` |
+| ★ **[sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match)** | OMS / DMS 双源销售三单匹配（5 类差异，多销售组织分组导出） | `Python` |
+| **[sales-three-match-toolkit](https://github.com/Gvmeakiss/sales-three-match-toolkit)** | SAP SD 销售三单匹配（大表 30GB+ 优化 / 负开票冲账 / Untested 四表） | `Python` `Pandas` |
+
+<details>
+<summary><b>▸ 客户落地实现</b>（客户 N / M 专属，逻辑同核心工具包）</summary>
+
+<br>
+
+| 仓库 | 说明 | 技术 |
+|---|---|---|
+| **[sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope)** | 客户 N 销售三单匹配实施版（含使用示例与排错） | `Python` |
+| **[sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026)** | 客户 N 2026 销售三单匹配（客户 Q 无交货金额 24 子组） | `Python` |
+| **[sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026)** | 客户 M 2026H1 销售三单匹配（OMS / DMS 双渠道，客户 Q-01~24） | `Python` |
+| **[miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025)** | 客户 M 2025 全年 ToB 销售三单匹配（FY25 五分类） | `Python` |
+| **[miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026)** | 客户 M 2026H1 ToB 销售三单匹配（冲销前置 / PBC 拆分 / 单测） | `Python` |
+| **[miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c)** | 客户 M ToC 四段 pairwise 对账（某电商平台 → 某订单中台 → OMS → SAP） | `Python` |
+
+</details>
+
+### 🧾 SAP JETesting 核对
+
+| 仓库 | 说明 | 技术 |
+|---|---|---|
+| **[sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1)** | SAP FI 2026H1 序时账 JE 测试：ACDOCA / BKPF / FAGLFLEXT 抽取、过账勾稽与异常凭证筛查 | `Python` `SAP` |
+| **[sap-je-toolkit](https://github.com/Gvmeakiss/sap-je-toolkit)** | SAP 多公司 JE 测试工具箱：序时账合并 + 期初 / 发生额 / 期末余额勾稽 + 交叉验证 | `Python` `SAP` |
+| **[je-high-risk-screening](https://github.com/Gvmeakiss/je-high-risk-screening)** | SAP JE 高风险分类筛查（HRC1 / HRC2 / HRC3 通用规则，序时账异常凭证识别） | `SQL` `Python` |
+| **[CRRC_DT](https://github.com/Gvmeakiss/CRRC_DT)** | CRRC 多公司 JE 会计分录测试：序时账合并 + 期初 / 发生额 / 期末余额勾稽（ACDOCA / BKPF / BSEG） | `Python` `SAP` |
+| **[CRRC_XC](https://github.com/Gvmeakiss/CRRC_XC)** | CRRC 材料板块多公司 JE 测试：序时账合并 + 余额交叉验证（BKPF / BSEG） | `Python` `SAP` |
 
 ### 📦 可复用 Skill
 
 | Skill | 解决的问题 | 关键能力 |
 |---|---|---|
 | 🧩 **[kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills)** | 审计数据分析流程难以复现 | **8 个**可移植的审计数据分析技能：workbench 路由、DA routine 底稿生成、配套模板 |
+| 🎤 **[internal-audit-reform](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/internal-audit-reform)** | 汇报材料每次重做 | 可编辑 PPT 终稿 + 逐页口播稿 + 复用规范 + 配图素材库（收纳于 notebook 仓库） |
+
+---
+
+<a name="all-repos"></a>
+
+## 📦 全部仓库
+
+> 上面是日常主用入口；下面按主题给出**完整清单**，含通用工具集与子工具 / SQL 模板直达链接。★ 标记核心可复用工具。
 
 <details>
-<summary><b>▸ 其余公开仓库去哪儿找</b></summary>
+<summary><b>▸ 其他核心仓库</b>（其余常用入口）</summary>
 
 <br>
 
-完整清单见 **[github.com/Gvmeakiss?tab=repositories](https://github.com/Gvmeakiss?tab=repositories)**。上面列的是日常最常用的入口；客户专属落地版（采购 / 销售三单匹配的分年度、分渠道实现）与通用工具集（CAATS SQL 模板、模拟数据生成、Excel 合并等）都在仓库列表里，按主题命名，需要时可直接检索。
+| 仓库 | 说明 | 技术 |
+|---|---|---|
+| **[kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills)** | **8 个**可移植 Codex 审计数据分析技能（workbench 路由、DA routine 底稿生成、配套模板） | `Skills` `Codex` |
+| **[u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation)** | U8 存货发出计价审计复核（CAATS / ITA 职责分离双工作簿） | `Excel` `U8` |
+| ★ **[sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction)** | SAP ABAP 取数 KAAP 配置与操作手册（FI / MM / SD） | `ABAP` `XML` |
+
+</details>
+
+<details>
+<summary><b>▸ 工具 & CAATS</b>（通用工具集 6 个仓库）</summary>
+
+<br>
+
+| 仓库 | 亮点 | 技术 |
+|---|---|---|
+| **[test-tools](https://github.com/Gvmeakiss/test-tools)** | SAP MM 三单匹配诊断与数据质量 —— 多源合并、列校验、质量规则、匹配为零归因 | `Python` |
+| **[dtt-caats-sql](https://github.com/Gvmeakiss/dtt-caats-sql)** | 通用 CAATS / 勾稽 SQL 模板 —— 销售订单匹配、物料追溯、出库分析、佣金 CAATS、利息 JAT、会员对账 / 权责 | `SQL` |
+| **[audit-data-utilities](https://github.com/Gvmeakiss/audit-data-utilities)** | 通用审计数据工具 —— 模拟凭证 / 余额生成、完整性校验、Excel 合并、预处理、SQL→表 | `Python` |
+| **[dtt-python-tools](https://github.com/Gvmeakiss/dtt-python-tools)** | 通用 Python 工具 —— Excel 合并、模拟数据生成、项目编码提取、网页爬虫 | `Python` `Jupyter` |
+| **[dylan-tool](https://github.com/Gvmeakiss/dylan-tool)** | 通用期末余额交叉验证（期初 + 凭证净额 − 期末 = 0 的批量勾稽） | `Python` |
+| **[ecommerce-order-analytics](https://github.com/Gvmeakiss/ecommerce-order-analytics)** | 电商订单多维分析（GMV / 复购 / 客单价） | `Python` `Pandas` |
+
+</details>
+
+<details>
+<summary><b>▸ 子工具 / SQL 模板直达链接</b>（按仓库分组）</summary>
+
+<br>
+
+**🔧 test-tools · SAP MM 三单匹配诊断与数据质量**
+
+| 工具 | 说明 | 技术 |
+|---|---|---|
+| [data_merge · 数据合并](https://github.com/Gvmeakiss/test-tools/blob/main/data_merge/merge_all_mm_data.py) | MM 多源数据自动合并（订单 / 收货 / 发票） | `Python` |
+| [data_quality · 列校验](https://github.com/Gvmeakiss/test-tools/blob/main/data_quality/check_columns.py) | 列结构一致性校验（缺失 / 错位 / 类型） | `Python` |
+| [data_quality · 质量检查](https://github.com/Gvmeakiss/test-tools/blob/main/data_quality/check_data_quality.py) | 空值 / 重复 / 范围等数据质量规则检查 | `Python` |
+| [diagnostics · 匹配诊断](https://github.com/Gvmeakiss/test-tools/blob/main/diagnostics/why_match_was_zero.py) | 三单匹配为零归因诊断（定位断点） | `Python` |
+
+**🔧 dtt-caats-sql · 通用 CAATS / 勾稽 SQL 模板**
+
+| 模板 | 说明 | 技术 |
+|---|---|---|
+| [销售订单匹配](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/HM/01_sales_order_match.sql) | 销售订单 ↔ 收入勾稽、退货冲红、外币折算 | `SQL` |
+| [物料追溯](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/HM/02_material_trace.sql) | BOM 产出 ↔ 组件消耗勾稽、重复值检测 | `SQL` |
+| [出库单分析](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/JSM/01_data_analysis.sql) | 交付 / 退货 / 刷单 / 渠道集中度分析 | `SQL` |
+| [佣金 CAATS](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/BHSZ/01_caats.sql) | 成交金额 × 佣金率 vs 账面重算 | `SQL` |
+| [利息预提 JAT](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/BHYH/01_jat_caats.sql) | 应付利息应计重算（JAT） | `SQL` |
+| [会员对账](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/CSDN/01_member_recon.sql) | 多支付渠道流水合并对账 | `SQL` |
+| [会员权责](https://github.com/Gvmeakiss/dtt-caats-sql/blob/main/CSDN/02_member_rights_logic.sql) | 会员递延收益按天摊销（Hive） | `SQL` |
+
+**🔧 audit-data-utilities · 通用审计数据工具**
+
+| 工具 | 说明 | 技术 |
+|---|---|---|
+| [凭证模拟生成](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/journal_generator.py) | 生成脱敏模拟序时账用于自测 | `Python` |
+| [余额模拟生成](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/balance_generator.py) | 生成脱敏模拟科目余额表 | `Python` |
+| [数据完整性校验](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/data_integrity_validator.py) | 勾稽规则校验（期初 + 发生额 − 期末 = 0 等） | `Python` |
+| [Excel 合并](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/utils/merge_excel.py) | 多工作簿批量合并 | `Python` |
+| [预处理](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/utils/preprocess.py) | 通用数据清洗与标准化 | `Python` |
+| [SQL→表](https://github.com/Gvmeakiss/audit-data-utilities/blob/main/utils/sql_to_table.py) | SQL 查询结果转结构化表 | `Python` |
+
+**🔧 dtt-python-tools · 通用 Python 工具**
+
+| 工具 | 说明 | 技术 |
+|---|---|---|
+| [Excel 合并（脚本）](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/merge_excel_tool.py) | 多工作簿 / 工作表批量合并 | `Python` |
+| [Excel 合并（Notebook）](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/excel_files_merger.ipynb) | 交互式 Excel 合并示例 | `Jupyter` |
+| [模拟数据生成](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/random_data_generator.ipynb) | 生成脱敏模拟数据集，用于工具自测 | `Jupyter` |
+| [项目编码提取](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/project_code_extractor.ipynb) | 从文本 / 文档提取结构化项目编码 | `Jupyter` |
+| [网页爬虫](https://github.com/Gvmeakiss/dtt-python-tools/blob/main/web_crawler.ipynb) | 通用网页数据采集模板 | `Jupyter` |
+
+**🔧 dylan-tool · 通用期末余额交叉验证**
+
+| 工具 | 说明 | 技术 |
+|---|---|---|
+| [余额交叉验证](https://github.com/Gvmeakiss/dylan-tool/blob/main/balance_cross_validator.py) | 期初 + 凭证净额 − 期末 = 0 的批量勾稽 | `Python` |
+
+**🔧 ecommerce-order-analytics · 电商订单数据分析**
+
+| 工具 | 说明 | 技术 |
+|---|---|---|
+| [订单分析](https://github.com/Gvmeakiss/ecommerce-order-analytics/blob/main/order_analytics.py) | 某电商平台订单多维分析（GMV / 复购 / 客单价） | `Python` `Pandas` |
+
+</details>
+
+<details>
+<summary><b>▸ 仓库索引</b>（按主题一览，共 32 个公开仓库）</summary>
+
+<br>
+
+| 主题 | 仓库 | 类型 |
+|---|---|---|
+| **SAP 取数** | `sap-abap-data-extraction` | 配置与手册 |
+| **采购三单匹配** | `purchase-three-match-configurable` · `purchase-three-match-toolkit` · `purchase-three-match-final` *(归档)* · `purchase-three-match-newhope` · `purchase-three-match-aqpp` · `miaoke-purchase-2026` | 核心 + 客户落地 |
+| **销售三单匹配** | `sap-sd-three-match` · `sales-oms-dms-match` · `sales-three-match-toolkit` · `sales-three-match-newhope` · `sales-three-match-newhope-2026` · `sales-three-match-miaoke-2026` · `miaoke-sales-to-b-2025` · `miaoke-sales-to-b-2026` · `miaoke-sales-to-c` | 核心 + 客户落地 |
+| **JE 测试与勾稽** | `sap-fi-2026h1` · `sap-je-toolkit` · `je-high-risk-screening` · `CRRC_DT` · `CRRC_XC` | 项目实现 |
+| **存货与计价** | `u8-inventory-valuation` | 审计复核 |
+| **工具 & CAATS** | `test-tools` · `dtt-caats-sql` · `audit-data-utilities` · `dtt-python-tools` · `dylan-tool` · `ecommerce-order-analytics` | 通用工具集 |
+| **Skill 与笔记** | `kpmg-da-skills` · `gvmeakiss-notebook` · `Gvmeakiss` *(本主页)* | Skill / 笔记 |
+| **历史归档** | `Gmeakiss0501` *(归档，空仓库)* | 归档 |
 
 </details>
 
@@ -139,8 +308,6 @@
 
 <a name="compliance"></a>
 
-<a name="compliance"></a>
-
 ## 🛡️ 数据合规
 
 > 本主页仅用于技术交流，分享**无收益分成**的通用代码处理逻辑，全部内容已脱敏。
@@ -167,40 +334,116 @@
 
 ### Notebook
 
-> **[gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook)** — five standalone projects: reusable configurations, tooling notes and AI skills. Each has its own `README.md`.
+> **[gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook)** — standalone projects: reusable configurations, tooling notes and AI skills. Each has its own `README.md`.
 
 | Project | Description |
 |---|---|
-| ✂️ **[screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit)**<br><sub>AI Skill</sub> | **High-fidelity text/digit editing inside screenshots** — glyph-cloning method, far more faithful than font redraw; CLI scripts + macOS Vision OCR |
-| 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **One command turns a fresh Windows box into an AI-development + gaming machine** — seven phases `check → dev → apps → drivers → tune → link → verify`; snapshot first, roll back from the baseline |
-| 📐 **[mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec)**<br><sub>Tech spec</sub> | **Enterprise "AI-Agent-driven light-app platform" technical spec** — static export + BFF mediation + predefined SQL + atomic-swap deployment |
-| 📊 **[audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban)**<br><sub>Demo app</sub> | **Offline audit work-progress kanban** — member updates → consolidator merge → manager board; pure front-end, double-click to run, fabricated demo data |
-| 📡 **[shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket)**<br><sub>Config</sub> | **General-purpose routing rules** — CN / global split, ad-block, long-connection tuning; shared by Mac and iPhone |
+| ✂️ **[screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit)**<br><sub>AI Skill</sub> | **High-fidelity text/digit editing inside screenshots** — glyph-cloning method; CLI scripts + macOS Vision OCR |
+| 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **One command turns a fresh Windows box into an AI-development + gaming machine** — seven phases, snapshot first, roll back from the baseline |
+| 📐 **[mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec)**<br><sub>Tech spec</sub> | **"AI-Agent-driven light-app platform" technical spec** — static export + BFF mediation + predefined SQL + atomic-swap deployment |
+| 📊 **[audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban)**<br><sub>Demo app</sub> | **Offline audit work-progress kanban** — pure front-end, double-click to run, fabricated demo data |
+| 📡 **[shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket)**<br><sub>Config</sub> | **General-purpose routing rules** — CN / global split, ad-block, long-connection tuning |
+| 🎤 **[internal-audit-reform](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/internal-audit-reform)**<br><sub>AI-assisted project</sub> | **Internal audit reform presentation kit** — editable deck, page-matched script, reuse standards, image library |
+| 🧩 **[audit-workbench](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-workbench)**<br><sub>Engineering project</sub> | **Next.js build of audit-kanban** — team partitions, stage history, salvage batches, archive restore, SQLite DDL |
+| ⚙️ **[merlin](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/merlin)**<br><sub>Config and tools</sub> | **Merlin fancyss routing** — routing lists and an endpoint bypass generator |
+| 📝 **[Windows setup notes](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/windows-environment-setup.md)**<br><sub>Notes</sub> | **Locked-down Windows 10 to working dev box** — 14 issues, reproducible commands, Windows-specific pitfalls |
+| 📝 **[System tweaks audit](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/system-tweaks-audit.md)**<br><sub>Notes</sub> | **Item-by-item evidence behind each system tweak** — pairs with the `win-ai-gaming-setup` tuning phase |
 
 ### Core tools
 
 > Organised along the working chain: **extract → match → review → distill into skills**. Each repo runs standalone; see its `README.md`.
 
-#### 📥 Extraction & JE testing
+#### 📥 SAP ABAP extraction (FI / MM / SD)
 
-| Tool | Problem it solves | Key capabilities |
+| Module | Content |
+|---|---|
+| [📒 **FI — Financial**](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/FI/README.md) | Journals (BKPF + BSEG) and balances (FAGLFLEXT / GLT0), secondary indexes, account masters |
+| [📦 **MM — Procurement**](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/MM/README.md) | Orders / purchase history (EKBE hub) / goods receipts / invoices |
+| [🚚 **SD — Sales**](https://github.com/Gvmeakiss/sap-abap-data-extraction/blob/main/SD/README.md) | Orders / deliveries / billing / document flow (VBFA) |
+
+Main repo: [**sap-abap-data-extraction**](https://github.com/Gvmeakiss/sap-abap-data-extraction) — KAAP extraction config and runbook with audit-scenario mapping · `ABAP` `XML`
+
+#### 🛒 Three-way match · Purchase
+
+> Purchase order × goods receipt × invoice, joined on `(EBELN, EBELP)` — **4 major / 13 sub variance classes** with reviewable workpapers.
+
+| Repo | Description | Tech |
 |---|---|---|
-| 📒 **[sap-abap-data-extraction](https://github.com/Gvmeakiss/sap-abap-data-extraction)** | Which SAP tables to pull, and how fields map to audit assertions | KAAP extraction config & runbook for **FI / MM / SD**, with scoping and audit-scenario mapping (journals BKPF + BSEG, balances FAGLFLEXT / GLT0, orders / receipts / invoices, document flow VBFA) |
-| 🧾 **[sap-je-toolkit](https://github.com/Gvmeakiss/sap-je-toolkit)** | After merging multi-company journals, do the balances tie out | Journal consolidation + **opening / activity / closing balance check** + cross-validation, pinpointing the company and account that breaks |
+| ★ **[purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable)** | Configurable generic engine (SQL parsing / caching / match keys / classification / Excel export) | `Python` `Pandas` |
+| **[purchase-three-match-toolkit](https://github.com/Gvmeakiss/purchase-three-match-toolkit)** | SAP MM purchase three-way match (4/13 classes, KPMG-format TXT) | `Python` `Pandas` |
+| **[purchase-three-match-final](https://github.com/Gvmeakiss/purchase-three-match-final)** | Integrated purchase three-way match (4/13 classes) · archived | `Python` |
 
-#### 🛒💰 Matching & reconciliation
+<details>
+<summary><b>▸ Client deployments</b> (Client N / Q / M)</summary>
 
-| Tool | Problem it solves | Key capabilities |
+<br>
+
+- **[purchase-three-match-newhope](https://github.com/Gvmeakiss/purchase-three-match-newhope)** — Client N purchase three-way match (with SAP extraction docs)
+- **[purchase-three-match-aqpp](https://github.com/Gvmeakiss/purchase-three-match-aqpp)** — Client Q 2026 matching archive index (order / delivery / invoice, Q-01~24)
+- **[miaoke-purchase-2026](https://github.com/Gvmeakiss/miaoke-purchase-2026)** — Client M 2026H1 purchase three-way match (line-level full outer join + 24 groups)
+
+</details>
+
+#### 💰 Three-way match · Sales
+
+> Sales order × delivery × invoice across SAP SD and OMS / DMS — **13 scenarios / 5 variance classes**.
+
+| Repo | Description | Tech |
 |---|---|---|
-| ⚙️ **[purchase-three-match-configurable](https://github.com/Gvmeakiss/purchase-three-match-configurable)** | Rewriting the matching script for every engagement | Configurable generic engine: SQL parsing / caching / match keys / variance classification / Excel export |
-| 🧮 **[sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match)** | OMS / DMS and SAP sales data not agreeing | Dual-source sales three-way match, **5 variance classes**, grouped export by sales organisation |
-| 📊 **[u8-inventory-valuation](https://github.com/Gvmeakiss/u8-inventory-valuation)** | Whether U8 inventory issue valuation is computed correctly | Dual audit-review workbooks (CAATS / ITA segregation of duties) |
+| ★ **[sap-sd-three-match](https://github.com/Gvmeakiss/sap-sd-three-match)** | SAP SD sales three-way match (13 scenarios, parallel by company, key fallback) | `Python` `SAP` |
+| ★ **[sales-oms-dms-match](https://github.com/Gvmeakiss/sales-oms-dms-match)** | OMS / DMS dual-source match (5 variance classes, grouped by sales org) | `Python` |
+| **[sales-three-match-toolkit](https://github.com/Gvmeakiss/sales-three-match-toolkit)** | SAP SD match (30GB+ big-table optimization / credit-memo offset) | `Python` `Pandas` |
+
+<details>
+<summary><b>▸ Client deployments</b> (Client N / M)</summary>
+
+<br>
+
+- **[sales-three-match-newhope](https://github.com/Gvmeakiss/sales-three-match-newhope)** — Client N sales three-way match (examples & troubleshooting)
+- **[sales-three-match-newhope-2026](https://github.com/Gvmeakiss/sales-three-match-newhope-2026)** — Client N 2026 sales three-way match (24 sub-groups)
+- **[sales-three-match-miaoke-2026](https://github.com/Gvmeakiss/sales-three-match-miaoke-2026)** — Client M 2026H1 sales three-way match (OMS / DMS dual channel)
+- **[miaoke-sales-to-b-2025](https://github.com/Gvmeakiss/miaoke-sales-to-b-2025)** — Client M FY2025 ToB sales three-way match (5 classes)
+- **[miaoke-sales-to-b-2026](https://github.com/Gvmeakiss/miaoke-sales-to-b-2026)** — Client M 2026H1 ToB match (cancellation preprocessing / PBC split / unit tests)
+- **[miaoke-sales-to-c](https://github.com/Gvmeakiss/miaoke-sales-to-c)** — Client M ToC four-segment pairwise reconciliation
+
+</details>
+
+#### 🧾 SAP JE testing
+
+| Repo | Description | Tech |
+|---|---|---|
+| **[sap-fi-2026h1](https://github.com/Gvmeakiss/sap-fi-2026h1)** | SAP FI 2026H1 JE testing: ACDOCA / BKPF / FAGLFLEXT extraction, posting reconciliation, anomaly screening | `Python` `SAP` |
+| **[sap-je-toolkit](https://github.com/Gvmeakiss/sap-je-toolkit)** | Multi-company JE toolkit: consolidation + opening/activity/closing check + cross-validation | `Python` `SAP` |
+| **[je-high-risk-screening](https://github.com/Gvmeakiss/je-high-risk-screening)** | JE high-risk classification screening (HRC1/2/3 generic rules) | `SQL` `Python` |
+| **[CRRC_DT](https://github.com/Gvmeakiss/CRRC_DT)** | CRRC multi-company JE test (ACDOCA / BKPF / BSEG) | `Python` `SAP` |
+| **[CRRC_XC](https://github.com/Gvmeakiss/CRRC_XC)** | CRRC materials segment JE test (BKPF / BSEG) | `Python` `SAP` |
 
 #### 📦 Reusable skills
 
 | Skill | Problem it solves | Key capabilities |
 |---|---|---|
-| 🧩 **[kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills)** | Audit data-analytics routines that are hard to reproduce | **8** portable audit data-analytics skills: workbench routing, DA-routine workpaper generation, bundled templates |
+| 🧩 **[kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills)** | Audit data-analytics routines that are hard to reproduce | **8** portable skills: workbench routing, DA-routine workpaper generation, templates |
+| 🎤 **[internal-audit-reform](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/internal-audit-reform)** | Rebuilding presentation material every time | Editable deck + page-matched script + reuse standards + image library |
+
+### All repositories
+
+<details>
+<summary><b>▸ Tools & CAATS, and per-repo sub-tool links</b> (generic toolkits)</summary>
+
+<br>
+
+| Repo | Highlights | Tech |
+|---|---|---|
+| **[test-tools](https://github.com/Gvmeakiss/test-tools)** | SAP MM matching diagnostics & data quality — merge, column checks, quality rules, why-match-was-zero | `Python` |
+| **[dtt-caats-sql](https://github.com/Gvmeakiss/dtt-caats-sql)** | Generic CAATS / reconciliation SQL templates | `SQL` |
+| **[audit-data-utilities](https://github.com/Gvmeakiss/audit-data-utilities)** | Mock journal/balance generators, integrity validator, Excel merge, preprocess, SQL→table | `Python` |
+| **[dtt-python-tools](https://github.com/Gvmeakiss/dtt-python-tools)** | Excel merge, mock-data generation, project-code extraction, web crawler | `Python` `Jupyter` |
+| **[dylan-tool](https://github.com/Gvmeakiss/dylan-tool)** | Closing-balance cross-validation (opening + net postings − closing = 0) | `Python` |
+| **[ecommerce-order-analytics](https://github.com/Gvmeakiss/ecommerce-order-analytics)** | E-commerce order analytics (GMV / repurchase / AOV) | `Python` `Pandas` |
+
+Sub-tool and SQL-template deep links live in the Chinese section — see [📦 全部仓库](#-全部仓库) → 子工具 / SQL 模板直达链接, grouped per repo: `test-tools` (4), `dtt-caats-sql` (7), `audit-data-utilities` (6), `dtt-python-tools` (5), `dylan-tool` (1), `ecommerce-order-analytics` (1).
+
+</details>
 
 ### Methodology
 
