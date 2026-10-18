@@ -300,6 +300,7 @@
 
 ## 📚 参考与官方文档
 
+> [!NOTE]
 > 三单匹配 / 序时账-余额核对 / 多源对账的逻辑依赖各 ERP 的标准数据结构与接口规范，以下为厂商官方文档，作为数据口径与字段映射的权威依据。
 
 | 系统 | 文档 |
@@ -314,6 +315,7 @@
 
 ## 🛡️ 数据合规
 
+> [!IMPORTANT]
 > 本主页仅用于技术交流，分享**无收益分成**的通用代码处理逻辑，全部内容已脱敏。
 > 依据 **PIPL 第 51 / 73 条**（去标识化 / 匿名化）、**数据安全法第 21 / 27 条**（分类分级保护）、**反不正当竞争法第 9 条**（商业秘密保护）处理。
 > 脱敏范围：客户名称、法律实体、内部标识 / 代号、真实地址、支付与账户信息、订单 / 商品编码、财务数据及任何客户底稿。
@@ -463,6 +465,7 @@ Sub-tool and SQL-template deep links live in the Chinese section — see [📦 �
 
 ### Compliance
 
+> [!IMPORTANT]
 > For technical exchange only, on a **no-revenue-sharing** basis; fully desensitized under **PIPL (Art. 51 / 73)**, the **Data Security Law (Art. 21 / 27)** and the **Anti-Unfair-Competition Law (Art. 9)**. Scope: client names, legal entities, internal codes, real addresses, payment/account info, order/product codes, financial data and any client workpapers. **No financial data or client workpapers are stored or uploaded here.**
 
 ### References
