@@ -66,7 +66,8 @@
 | 项目 | 说明 |
 |---|---|
 | ✂️ **[screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit)**<br><sub>AI Skill</sub> | **截图文字 / 数字高保真修改** —— 字形克隆法，保真度远高于字体重绘；含 CLI 脚本与 macOS Vision OCR |
-| 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **新装 Windows 一条命令配成「AI 开发 + 游戏」机** —— 七阶段 `check → dev → apps → drivers → tune → link → verify`，先快照、可按基线回滚 |
+| 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **新装 Windows 一条命令配成「AI 开发 + 游戏」机** —— 20 个软件（含 7-Zip / WinRAR）、13 类配置、51 项验收；七阶段先快照、可按基线回滚。README 给人看、SKILL.md 给 AI 执行 |
+| 🎮 **[game-optimizations](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/game-optimizations)**<br><sub>游戏优化</sub> | **各游戏优化，按游戏分子目录** —— 当前 CS2：只读体检 + 可回退应用脚本（`-WhatIf` / `-Revert`），含瓶颈判定与天花板计算 |
 | 📐 **[mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec)**<br><sub>技术规范</sub> | **企业级「AI Agent 驱动轻应用平台」技术规范** —— 静态导出 + BFF 中介 + SQL 预定义 + 原子替换部署 |
 | 📊 **[audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban)**<br><sub>演示应用</sub> | **离线稽核工作进度看板** —— 同事填报 → 专人汇总 → 经理看板；纯前端双击即用，含虚构演示数据 |
 | 📡 **[shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket)**<br><sub>分流配置</sub> | **通用分流配置** —— 国内外分流 / 去广告 / 长连接优化，Mac 与 iPhone 共用 |
@@ -75,6 +76,9 @@
 | ⚙️ **[merlin](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/merlin)**<br><sub>配置与工具</sub> | **梅林 fancyss 分流** —— 分流名单、节点入口绕过生成工具与使用指南 |
 | 📝 **[Windows 环境配置记录](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/windows-environment-setup.md)**<br><sub>实践记录</sub> | **Windows 10 非管理员环境从零配到可用** —— 14 项问题总表、复现命令与 Windows 专属陷阱 |
 | 📝 **[系统调优核查记录](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/system-tweaks-audit.md)**<br><sub>实践记录</sub> | **系统优化项逐条核查依据** —— 与 `win-ai-gaming-setup` 的调优阶段配套 |
+| 📝 **[Windows 11 复核记录](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/windows-environment-setup-win11.md)**<br><sub>实践记录</sub> | **一台「已优化过」的机器逐项复核** —— 真损害 / 被累积更新删掉的调优值 / 审计者自己的 3 处误判 |
+| 📝 **[NAS 稳定性专项](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/windows-nas-smb-stability.md)**<br><sub>实践记录</sub> | **「NAS 不稳」定位到睡眠唤醒后没重连** —— 事件时间对齐法、事件触发任务、先算链路天花板 |
+| 📝 **[Skill 自审方法论](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/skill-self-audit.md)**<br><sub>方法论</sub> | **把 skill 的「文档承诺」变成「可验证事实」** —— 5 类缺陷、性能优化的等价性证明 |
 
 ---
 
@@ -339,7 +343,8 @@
 | Project | Description |
 |---|---|
 | ✂️ **[screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit)**<br><sub>AI Skill</sub> | **High-fidelity text/digit editing inside screenshots** — glyph-cloning method; CLI scripts + macOS Vision OCR |
-| 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **One command turns a fresh Windows box into an AI-development + gaming machine** — seven phases, snapshot first, roll back from the baseline |
+| 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **One command turns a fresh Windows box into an AI-development + gaming machine** — 20 apps (incl. 7-Zip / WinRAR), 13 config groups, 51 checks; seven phases, snapshot first, roll back from the baseline. README for humans, SKILL.md for AI execution |
+| 🎮 **[game-optimizations](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/game-optimizations)**<br><sub>Game tuning</sub> | **Per-game optimization, one subdirectory per game** — CS2 for now: read-only readiness check plus a revertible apply script (`-WhatIf` / `-Revert`) |
 | 📐 **[mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec)**<br><sub>Tech spec</sub> | **"AI-Agent-driven light-app platform" technical spec** — static export + BFF mediation + predefined SQL + atomic-swap deployment |
 | 📊 **[audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban)**<br><sub>Demo app</sub> | **Offline audit work-progress kanban** — pure front-end, double-click to run, fabricated demo data |
 | 📡 **[shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket)**<br><sub>Config</sub> | **General-purpose routing rules** — CN / global split, ad-block, long-connection tuning |
@@ -348,6 +353,9 @@
 | ⚙️ **[merlin](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/merlin)**<br><sub>Config and tools</sub> | **Merlin fancyss routing** — routing lists and an endpoint bypass generator |
 | 📝 **[Windows setup notes](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/windows-environment-setup.md)**<br><sub>Notes</sub> | **Locked-down Windows 10 to working dev box** — 14 issues, reproducible commands, Windows-specific pitfalls |
 | 📝 **[System tweaks audit](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/system-tweaks-audit.md)**<br><sub>Notes</sub> | **Item-by-item evidence behind each system tweak** — pairs with the `win-ai-gaming-setup` tuning phase |
+| 📝 **[Windows 11 revisit](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/windows-environment-setup-win11.md)**<br><sub>Notes</sub> | **Re-auditing an already "optimized" box** — real damage, tuning values deleted by cumulative updates, and 3 mistakes the auditor made |
+| 📝 **[NAS stability deep-dive](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/windows-nas-smb-stability.md)**<br><sub>Notes</sub> | **"NAS is unstable" traced to no remount after sleep** — event-time correlation, event-triggered task, ceiling math first |
+| 📝 **[Skill self-audit](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/skill-self-audit.md)**<br><sub>Methodology</sub> | **Turning a skill's documentation promises into verifiable facts** — 5 defect classes, equivalence proof for perf changes |
 
 ### Core tools
 
