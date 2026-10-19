@@ -177,8 +177,9 @@
 
 | Skill | 解决的问题 | 关键能力 |
 |---|---|---|
-| 🧩 **[kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills)** | 审计数据分析流程难以复现 | **8 个**可移植的审计数据分析技能：workbench 路由、DA routine 底稿生成、配套模板 |
 | 🎤 **[internal-audit-reform](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/internal-audit-reform)** | 汇报材料每次重做 | 可编辑 PPT 终稿 + 逐页口播稿 + 复用规范 + 配图素材库（收纳于 notebook 仓库） |
+| 🎤 **[internal-audit-reform](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/internal-audit-reform)** | 汇报材料每次重做 | 可编辑 PPT 终稿 + 逐页口播稿 + 复用规范 + 配图素材库（收纳于 notebook 仓库） |
+| 🧩 **[kpmg-da-skills](https://github.com/Gvmeakiss/kpmg-da-skills)** | 审计数据分析流程难以复现 | **8 个**可移植的审计数据分析技能：workbench 路由、DA routine 底稿生成、配套模板 |
 
 ---
 
