@@ -75,19 +75,19 @@
 
 ## 📓 个人笔记
 
-> **[gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook)** —— 通用配置、工具说明与 AI Skill 的收纳本。各项目独立成篇，从目录里的 `README.md` 进入。
+> **[gvmeakiss-notebook](https://github.com/Gvmeakiss/gvmeakiss-notebook)** —— 通用配置、工具说明与 AI Skill 的收纳本。下表按“审计与业务工具 → AI Skill → 系统与配置 → 实践记录”排列，各项目独立成篇，从目录里的 `README.md` 进入。
 
 | 项目 | 说明 |
 |---|---|
+| 🎤 **[internal-audit-reform](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/internal-audit-reform)**<br><sub>AI 复用项目</sub> | **内部审计整改汇报复用包** —— 可编辑 PPT 终稿、逐页口播稿、复用规范与配图素材库（私有仓库） |
+| 📊 **[audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban)**<br><sub>演示应用</sub> | **离线稽核工作进度看板** —— 同事填报 → 专人汇总 → 经理看板；纯前端双击即用，含虚构演示数据 |
+| 🧩 **[audit-workbench](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-workbench)**<br><sub>工程项目</sub> | **audit-kanban 的 Next.js 工程版** —— 团队分区、阶段历史、挽损分批、归档恢复与 SQLite DDL |
 | ✂️ **[screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit)**<br><sub>AI Skill</sub> | **截图文字 / 数字高保真修改** —— 字形克隆法，保真度远高于字体重绘；含 CLI 脚本与 macOS Vision OCR |
 | 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **新装 Windows 一条命令配成「AI 开发 + 游戏」机** —— 20 个软件（含 7-Zip / WinRAR）、13 类配置、56 项验收；七阶段先快照、可按基线回滚。README 给人看、SKILL.md 给 AI 执行 |
-| 🎮 **[game-optimizations](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/game-optimizations)**<br><sub>游戏优化</sub> | **各游戏优化，按游戏分子目录** —— 当前 CS2：只读体检 + 可回退应用脚本（`-WhatIf` / `-Revert`），含瓶颈判定与天花板计算 |
 | 📐 **[mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec)**<br><sub>技术规范</sub> | **企业级「AI Agent 驱动轻应用平台」技术规范** —— 静态导出 + BFF 中介 + SQL 预定义 + 原子替换部署 |
-| 📊 **[audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban)**<br><sub>演示应用</sub> | **离线稽核工作进度看板** —— 同事填报 → 专人汇总 → 经理看板；纯前端双击即用，含虚构演示数据 |
 | 📡 **[shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket)**<br><sub>分流配置</sub> | **通用分流配置** —— 国内外分流 / 去广告 / 长连接优化，Mac 与 iPhone 共用 |
-| 🎤 **[internal-audit-reform](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/internal-audit-reform)**<br><sub>AI 复用项目</sub> | **内部审计整改汇报复用包** —— 可编辑 PPT 终稿、逐页口播稿、复用规范与配图素材库 |
-| 🧩 **[audit-workbench](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-workbench)**<br><sub>工程项目</sub> | **audit-kanban 的 Next.js 工程版** —— 团队分区、阶段历史、挽损分批、归档恢复与 SQLite DDL |
 | ⚙️ **[merlin](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/merlin)**<br><sub>配置与工具</sub> | **梅林 fancyss 分流** —— 分流名单、节点入口绕过生成工具与使用指南 |
+| 🎮 **[game-optimizations](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/game-optimizations)**<br><sub>游戏优化</sub> | **各游戏优化，按游戏分子目录** —— 当前 CS2：只读体检 + 可回退应用脚本（`-WhatIf` / `-Revert`），含瓶颈判定与天花板计算 |
 | 📝 **[Windows 环境配置记录](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/windows-environment-setup.md)**<br><sub>实践记录</sub> | **Windows 10 非管理员环境从零配到可用** —— 14 项问题总表、复现命令与 Windows 专属陷阱 |
 | 📝 **[系统调优核查记录](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/system-tweaks-audit.md)**<br><sub>实践记录</sub> | **系统优化项逐条核查依据** —— 与 `win-ai-gaming-setup` 的调优阶段配套 |
 | 📝 **[Windows 11 复核记录](https://github.com/Gvmeakiss/gvmeakiss-notebook/blob/main/docs/windows-environment-setup-win11.md)**<br><sub>实践记录</sub> | **一台「已优化过」的机器逐项复核** —— 真损害 / 被累积更新删掉的调优值 / 审计者自己的 3 处误判 |
