@@ -85,7 +85,7 @@
 | 📊 **[audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban)**<br><sub>演示应用</sub> | **离线稽核工作进度看板** —— 同事填报 → 专人汇总 → 经理看板；纯前端双击即用，含虚构演示数据 |
 | 🧩 **[audit-workbench](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-workbench)**<br><sub>工程项目</sub> | **audit-kanban 的 Next.js 工程版** —— 团队分区、阶段历史、挽损分批、归档恢复与 SQLite DDL |
 | ✂️ **[screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit)**<br><sub>AI Skill</sub> | **截图文字 / 数字高保真修改** —— 字形克隆法，保真度远高于字体重绘；含 CLI 脚本与 macOS Vision OCR |
-| 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **新装 Windows 一条命令配成「AI 开发 + 游戏」机** —— 20 个软件（含 7-Zip / WinRAR）、13 类配置、62 项验收；七阶段先快照、可按基线回滚。README 给人看、SKILL.md 给 AI 执行 |
+| 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **新装 Windows 一条命令配成「AI 开发 + 游戏」机** —— 20 个软件（含 7-Zip / WinRAR）、13 类配置、63 项验收；七阶段先快照、可按基线回滚。README 给人看、SKILL.md 给 AI 执行 |
 | 📐 **[mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec)**<br><sub>技术规范</sub> | **企业级「AI Agent 驱动轻应用平台」技术规范** —— 静态导出 + BFF 中介 + SQL 预定义 + 原子替换部署 |
 | 📡 **[shadowrocket](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/shadowrocket)**<br><sub>分流配置</sub> | **通用分流配置** —— 国内外分流 / 去广告 / 长连接优化，Mac 与 iPhone 共用 |
 | ⚙️ **[merlin](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/merlin)**<br><sub>配置与工具</sub> | **梅林 fancyss 分流** —— 分流名单、节点入口绕过生成工具与使用指南 |
@@ -361,7 +361,7 @@
 | Project | Description |
 |---|---|
 | ✂️ **[screenshot-text-edit](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/screenshot-text-edit)**<br><sub>AI Skill</sub> | **High-fidelity text/digit editing inside screenshots** — glyph-cloning method; CLI scripts + macOS Vision OCR |
-| 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **One command turns a fresh Windows box into an AI-development + gaming machine** — 20 apps (incl. 7-Zip / WinRAR), 13 config groups, 62 checks; seven phases, snapshot first, roll back from the baseline. README for humans, SKILL.md for AI execution |
+| 🪟 **[win-ai-gaming-setup](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/skills/win-ai-gaming-setup)**<br><sub>AI Skill</sub> | **One command turns a fresh Windows box into an AI-development + gaming machine** — 20 apps (incl. 7-Zip / WinRAR), 13 config groups, 63 checks; seven phases, snapshot first, roll back from the baseline. README for humans, SKILL.md for AI execution |
 | 🎮 **[game-optimizations](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/game-optimizations)**<br><sub>Game tuning</sub> | **Per-game optimization, one subdirectory per game** — CS2 for now: read-only readiness check plus a revertible apply script (`-WhatIf` / `-Revert`) |
 | 📐 **[mini-app-spec](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/mini-app-spec)**<br><sub>Tech spec</sub> | **"AI-Agent-driven light-app platform" technical spec** — static export + BFF mediation + predefined SQL + atomic-swap deployment |
 | 📊 **[audit-kanban](https://github.com/Gvmeakiss/gvmeakiss-notebook/tree/main/audit-kanban)**<br><sub>Demo app</sub> | **Offline audit work-progress kanban** — pure front-end, double-click to run, fabricated demo data |
